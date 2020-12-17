@@ -1,4 +1,5 @@
 # coding=utf-8
+import time
 from time import sleep
 from selenium import webdriver
 from appium import webdriver
@@ -77,6 +78,7 @@ except Exception as e:
 ac = driver.current_activity
 print (ac)
 driver.wait_activity(ac,10)
+# 点击搜索框
 driver.tap([(431,140),(200,140)],500)
 
 def search_button(driver):
@@ -92,21 +94,41 @@ def search_kuanghou(driver):
     return ele
 
 # 封装元素等待
-def wait_element(driver,locator,timeout=20):
+'''
+def wait_element(driver,locator,timeout=10):
     try:
         ele = WebDriverWait(driver,timeout,0.1).until(EC.presence_of_element_located(locator))
         return ele
     except Exception as e:
-        driver.save_screenshot(r'C:\Users\1111111\Desktop\app')
-        print (e)
+        driver.save_screenshot(r'C:\Users\1111111\Desktop\app\{}.png'.format(time.strftime('%Y%m%d%H%M%S')))
+        print ('找不到指定元素')
 
 search_kuang(driver).send_keys('测试')
 search_button(driver).click()
 search_kuanghou(driver).click()
 loc =(By.ID,'com.taobao.taobao:id/searchEdit')
-wait_element(driver,loc).send_keys('啊啊啊')
+wait_element(driver,loc).send_keys('测试66')
 search_button(driver).click()
 sleep(5)
+'''
+
+'''
+ele = 'new UiSelector().text()' # 单独
+ele = 'new UiSelector().textContains()'
+ele = 'new UiSelector().resourceId()'
+ele = 'new UiSelector().description("content-desc")'
+driver.find_elements_by_android_uiautomator()
+'''
+'''
+ele = 'resourceId().text()' # 组合
+ele = 'resourceId().childSelector()' 
+ele = 'resourceId().fromParent()'
+driver.find_element_by_android_uiautomator()
+'''
+
+
+
 
 driver.close_app()
+
 

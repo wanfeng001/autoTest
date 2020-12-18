@@ -4,7 +4,7 @@ import yaml
 from ruamel import yaml
 import os
 file_data=os.path.join(os.getcwd(), "..\data\yamldata.yaml")
-print (file_data)
+
 # 读取 yaml文件
 def readYaml(file=file_data):
     with open(file,mode='r',encoding='utf-8') as f:
@@ -20,7 +20,7 @@ def writeYaml(file=file_data):
         'appPackage': 'com.tencent.mm',
         'appActivity': '.ui.LauncherUI',
         'automationName': 'Uiautomator2',
-        'unicodeKeyboard': [True, "hh"],
+        'unicodeKeyboard': True,
         'resetKeyboard': True,
         'noReset': True,
         'chromeOptions': {'androidProcess': 'com.tencent.mm:tools'}

@@ -7,7 +7,7 @@ file_data=os.path.join(os.getcwd(), "..\data\yamldata.yaml")
 print (file_data)
 # 读取 yaml文件
 def readYaml(file=file_data):
-    with open(file=file_data,mode='r',encoding='utf-8') as f:
+    with open(file,mode='r',encoding='utf-8') as f:
         cfg = f.read()
         yamlData = yaml.safe_load(cfg)
         return yamlData
@@ -25,9 +25,8 @@ def writeYaml(file=file_data):
         'noReset': True,
         'chromeOptions': {'androidProcess': 'com.tencent.mm:tools'}
     }
-    with open(file=file_data,mode='w',encoding='utf-8') as f:
+    with open(file,mode='w',encoding='utf-8') as f:
         yaml.dump(desired_caps,f,Dumper=yaml.RoundTripDumper)
 
-writeYaml(file_data)
-data = readYaml(file_data)
-print(data)
+y=readYaml()
+print (y)

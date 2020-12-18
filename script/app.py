@@ -19,17 +19,19 @@ des ={
 'automationName':'Uiautomator2'
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',des)
-
+driver.implicitly_wait(10)
 ac = driver.current_activity
 print (ac)
 driver.wait_activity(ac,10)
 driver.find_element_by_id('com.taobao.taobao:id/provision_positive_button').click()
 ac1 = driver.current_activity
-sleep(5)
 driver.find_element_by_id('com.lbe.security.miui:id/permission_allow_foreground_only_button').click()
-# swipe.swipeDown(driver,n=3)
+
 '''
-滑动
+# 向下滑动
+swipe.swipeDown(driver,n=3)
+
+# 滑动
 l = driver.get_window_size()
 x1=l['width']*0.8
 y1=l['height']*0.1
@@ -61,8 +63,9 @@ a = is_toast_exist(driver,"再按一次返回键就退出手机淘宝")
 print (a)
 '''
 
-# 点击第一张图片
+
 '''
+# 点击第一张图片
 ac2 =driver.current_activity
 print (ac2)
 driver.wait_activity(ac2,20)
@@ -100,7 +103,7 @@ def wait_element(driver,locator,timeout=10):
         ele = WebDriverWait(driver,timeout,0.1).until(EC.presence_of_element_located(locator))
         return ele
     except Exception as e:
-        driver.save_screenshot(r'C:\Users\1111111\Desktop\app\{}.png'.format(time.strftime('%Y%m%d%H%M%S')))
+        driver.save_screenshot(r'C:\\Users\\1111111\\Desktop\\app\\{}.png'.format(time.strftime('%Y%m%d%H%M%S')))
         print ('找不到指定元素')
 
 search_kuang(driver).send_keys('测试')
@@ -127,8 +130,4 @@ driver.find_element_by_android_uiautomator()
 '''
 
 
-
-
 driver.close_app()
-
-

@@ -11,7 +11,6 @@ def readYaml(file=file_data):
         cfg = f.read()
         yamlData = yaml.safe_load(cfg)
         return yamlData
-
 # 写入 yaml文件
 def writeYaml(file=file_data):
     desired_caps = {

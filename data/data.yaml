@@ -1,0 +1,11 @@
+homepage:
+  dec: 首页
+  locators:
+    -
+      name: 城市选择
+      type: id
+      value: com.sencom.sankuai.meituan:id/city_button
+    -
+      name: 城市边缘
+      type: id
+      value: com.sencom.sankuai.meituan:id/aaa

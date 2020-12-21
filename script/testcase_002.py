@@ -4,7 +4,6 @@ from time import sleep
 from ddt import ddt, unpack, file_data,data
 import os
 from app import init_logging
-
 print (os.getcwd())
 @ddt
 class Test_001(unittest.TestCase):

@@ -7,18 +7,17 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from common import swipe
-
-des ={
+desired_caps ={
 'deviceName':'M2004J7AC',
 'platformName':'Android',
 'platformVersion':'10',
 'appPackage':'com.taobao.taobao',
 'appActivity':'com.taobao.tao.welcome.Welcome',
-'resetKeyboard':'true',
-'unicodeKeyboard':'true',
+'resetKeyboard': True,
+'unicodeKeyboard': True,
 'automationName':'Uiautomator2'
 }
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',des)
+driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
 driver.implicitly_wait(10)
 ac = driver.current_activity
 print (ac)

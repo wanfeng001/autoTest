@@ -14,5 +14,7 @@ desired_caps ={
 'noReset': True
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
+driver.implicitly_wait(10)
 swipe.swipeDown(driver,n=3)
+swipe.swipeUp(driver,n=3)
 driver.close_app()

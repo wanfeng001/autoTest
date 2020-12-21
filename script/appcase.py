@@ -15,13 +15,15 @@ desired_caps ={
 'appActivity':'com.taobao.tao.welcome.Welcome',
 'resetKeyboard': True,
 'unicodeKeyboard': True,
-'automationName':'Uiautomator2'
+'automationName':'Uiautomator2',
+'noReset': True
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
 driver.implicitly_wait(10)
 ac = driver.current_activity
 print (ac)
 driver.wait_activity(ac,10)
+driver.find_element_by_id('com.taobao.taobao:id/uik_mdButtonDefaultPositive').click()
 driver.find_element_by_id('com.taobao.taobao:id/provision_positive_button').click()
 ac1 = driver.current_activity
 driver.find_element_by_id('com.lbe.security.miui:id/permission_allow_foreground_only_button').click()

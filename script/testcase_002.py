@@ -12,7 +12,8 @@ class Test_001(unittest.TestCase):
         return 1
 
     #@data([1,2,3],[4,5,6])
-    @file_data(r'C:\Users\1111111\PycharmProjects\ApiAutoTest\data\jsondata.json')
+    #@file_data(r'C:\Users\1111111\PycharmProjects\ApiAutoTest\data\jsondata.json')
+    @file_data(r'C:\Users\1111111\PycharmProjects\ApiAutoTest\data\yamldata.yaml')
     @unpack
     def test_case03(self,token):
         print(token)
@@ -27,6 +28,7 @@ class Test_001(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+'''
 from selenium import webdriver
 init_logging()
 driver = webdriver.Chrome()
@@ -40,3 +42,4 @@ except Exception as e:
     logging.info(e)
     sleep(3)
 driver.quit()
+'''

@@ -19,7 +19,7 @@ def writeYaml(file=file_data):
         'deviceName': 'A5RNW18316011440',
         'appPackage': 'com.tencent.mm',
         'appActivity': '.ui.LauncherUI',
-        'automationName': 'Uiautomator2',
+        'automationName': 'UiAutomator2',
         'unicodeKeyboard': True,
         'resetKeyboard': True,
         'noReset': True,
@@ -28,5 +28,5 @@ def writeYaml(file=file_data):
     with open(file,mode='w',encoding='utf-8') as f:
         yaml.dump(desired_caps,f,Dumper=yaml.RoundTripDumper)
 
-y=readYaml()
+y = readYaml()
 print (y)

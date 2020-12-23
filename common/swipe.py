@@ -11,15 +11,15 @@ des ={
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',des)
 
-def swipeUp(driver,t=500,n=1):
+def swipeDown(driver,t=500,n=1):
     l = driver.get_window_size()
     x1= l['width']* 0.5
     y1= l['height']* 0.25
-    y2= l['height']* 0.75
+    y2= l['height']* 0.8
     for i in range(n):
         driver.swipe(x1,y1,x1,y2,t)
 
-def swipeDown(driver,t=500,n=1):
+def swipeUp(driver,t=500,n=1):
     l = driver.get_window_size()
     x1= l['width']* 0.5
     y1= l['height']* 0.75

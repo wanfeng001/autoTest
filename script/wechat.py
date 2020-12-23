@@ -4,10 +4,10 @@ from common import swipe
 
 desired_caps ={
 'deviceName':'M2004J7AC',
-'platformName':'Android',
-'platformVersion':'10',
 'appPackage':'com.tencent.mm',
 'appActivity':'.ui.LauncherUI',
+'platformName':'Android',
+'platformVersion':'10',
 'resetKeyboard': True,
 'unicodeKeyboard': True,
 'chromeOptions': {'androidProcess':'com.tencent.mm:appbrand0'},
@@ -31,4 +31,5 @@ print('成功点击了')
 sleep(10)
 driver.close_app()
 driver.quit()
+
 

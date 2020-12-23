@@ -1,7 +1,8 @@
 from time import sleep
-
 from appium import webdriver
-des ={
+
+'''
+desired_caps ={
 'deviceName':'M2004J7AC',
 'platformName':'Android',
 'platformVersion':'10',
@@ -9,7 +10,8 @@ des ={
 'appActivity':'com.taobao.tao.welcome.Welcome',
 'resetKeyboard':'true'
 }
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',des)
+driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
+'''
 
 def swipeDown(driver,t=500,n=1):
     l = driver.get_window_size()
@@ -43,16 +45,4 @@ def swipeLeft(driver,t=500,n=1):
     for i in range(n):
         driver.swipe(x1,y1,x2,y1,t)
 
-if __name__ == "__main__":
-    ac = driver.current_activity
-    driver.wait_activity(ac, 20)
-    driver.find_element_by_id('com.taobao.taobao:id/provision_positive_button').click()
-    driver.find_element_by_id('com.lbe.security.miui:id/permission_allow_foreground_only_button').click()
-    sleep(3)
-    swipeDown(driver,n=2)
-    sleep(3)
-    swipeRight(driver,n=2)
-    sleep(3)
-    swipeLeft(driver,n=2)
-    driver.close_app()
 

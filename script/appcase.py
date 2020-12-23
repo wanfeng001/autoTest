@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from common import swipe
-'''
+
 desired_caps ={
 'deviceName':'M2004J7AC',
 'platformName':'Android',
@@ -19,7 +19,6 @@ desired_caps ={
 'automationName':'UiAutomator2',
 'noReset': True
 }
-
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
 
 driver.implicitly_wait(10)
@@ -32,7 +31,7 @@ ac1 = driver.current_activity
 driver.find_element_by_id('com.lbe.security.miui:id/permission_allow_foreground_only_button').click()
 t = driver.contexts
 print (t)
-'''
+
 '''
 # 向下滑动
 swipe.swipeDown(driver,n=3)

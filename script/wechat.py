@@ -32,4 +32,3 @@ sleep(10)
 driver.close_app()
 driver.quit()
 
-

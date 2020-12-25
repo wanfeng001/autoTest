@@ -12,7 +12,7 @@ db =pymysql.connect(
     password = Readconfig.my_ini('db_password'),
     db = Readconfig.my_ini('db_lib')
 )
-# cur = db.cursor()
+
 cur = db.cursor(cursor=pymysql.cursors.DictCursor)
 cur.execute('select * from student')
 data = cur.fetchall()

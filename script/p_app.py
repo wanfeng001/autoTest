@@ -1,4 +1,5 @@
 # coding=utf-8
+import os
 import time
 from time import sleep
 from selenium import webdriver
@@ -7,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from common import swipe
+from common.saveScreenshot import take_photo
 
 desired_caps ={
 'deviceName':'M2004J7AC',
@@ -102,13 +104,12 @@ def search_kuanghou(driver):
     return ele
 
 # 封装元素等待
-'''
 def wait_element(driver,locator,timeout=10):
     try:
         ele = WebDriverWait(driver,timeout,0.1).until(EC.presence_of_element_located(locator))
         return ele
     except Exception as e:
-        driver.save_screenshot(r'C:\\Users\\1111111\\Desktop\\app\\{}.png'.format(time.strftime('%Y%m%d%H%M%S')))
+        take_photo(driver)
         print ('找不到指定元素')
 
 search_kuang(driver).send_keys('测试')
@@ -118,7 +119,7 @@ loc =(By.ID,'com.taobao.taobao:id/searchEdit')
 wait_element(driver,loc).send_keys('测试66')
 search_button(driver).click()
 sleep(5)
-'''
+
 
 '''
 ele = 'new UiSelector().text()' # 单独

@@ -27,19 +27,3 @@ class Test_001(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-'''
-from selenium import webdriver
-init_logging()
-driver = webdriver.Chrome()
-driver.maximize_window()
-driver.implicitly_wait(3)
-driver.get('http://www.hao123.com')
-try:
-    js = 'document.documentElement.scrollTop=10000'
-    driver.execute_script(js)
-except Exception as e:
-    logging.info(e)
-    sleep(3)
-driver.quit()
-'''

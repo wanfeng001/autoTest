@@ -1,7 +1,7 @@
 from time import sleep
 from appium import webdriver
 from common import swipe
-from common import saveScreenshot
+from common.saveScreenshot import take_photo
 
 desired_caps ={
 'deviceName':'M2004J7AC',
@@ -24,7 +24,7 @@ driver.wait_activity(ac,1000)
 swipe.swipeDown(driver,n=3)
 driver.find_elements_by_id('com.tencent.mm:id/cna')[0].click()
 print (driver.contexts)
-saveScreenshot.take_photo(driver)
+take_photo(driver)
 ac1 = driver.current_activity
 print(ac1)
 driver.wait_activity(ac1,1000)

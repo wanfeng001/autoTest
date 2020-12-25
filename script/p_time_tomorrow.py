@@ -3,6 +3,9 @@ import time
 from selenium import webdriver
 from tomorrow import threads
 # 装饰器
+from common.saveScreenshot import take_photo
+
+
 def count_time(func):
     def int_time(*args,**kwargs):
         start_time = time.time()
@@ -21,7 +24,7 @@ def a():
 '''
 
 '''
-# 装饰器@property
+#装饰器 @property
 class Test():
     @property
     def test(self):
@@ -32,6 +35,17 @@ class Test():
         return 16
 
 print (Test().test,Test().test1())
+'''
+
+'''
+# 装饰器 unittest用例失败截图
+def save_screenshot(func):
+    def error_save_screenshot(self,*args,**kwargs):
+        try:
+            func(self,*args,**kwargs)
+        except Exception as e:
+            take_photo(self.driver)
+    return error_save_screenshot
 '''
 
 @threads(3)
@@ -49,6 +63,7 @@ def open_function(browser):
         driver.get('http://www.4399.com')
         driver.close()
 
+# @save_screenshot
 def open_function1():
     driver = webdriver.Chrome()
     driver.get('http://www.baidu.com')

@@ -10,7 +10,6 @@ class Test_001(unittest.TestCase):
     @classmethod
     def test_case01(self):
         return 1
-
     #@data([1,2,3],[4,5,6])
     #@file_data(r'C:\Users\1111111\PycharmProjects\ApiAutoTest\data\jsondata.json')
     @file_data(r'C:\Users\1111111\PycharmProjects\ApiAutoTest\data\yamldata.yaml')

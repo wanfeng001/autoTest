@@ -28,7 +28,7 @@ class SendEmail():
         self.msg['subject'] = self.subject
 
         # 正文内容
-        with open(report_file_path,mode='rb') as f:
+        with open(report_file_path,mode='r') as f:
             self.mail_body = f.read()
             f.close()
 

@@ -5,7 +5,7 @@ from tools import HTMLTestRunner
 import logging
 import os
 import time
-from script.testcase_001 import Test_001
+from script.p_ddt import Test_001
 
 logger = init_logging()
 class RunCase(unittest.TestCase):

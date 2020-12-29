@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from common import swipe
 from common.saveScreenshot import take_photo
+from common.waitElement import wait_element
 
 desired_caps ={
 'deviceName':'M2004J7AC',
@@ -102,7 +103,7 @@ def search_kuang(driver):
 def search_kuanghou(driver):
     ele = driver.find_element_by_id('com.taobao.taobao:id/search_bar_wrapper')
     return ele
-
+'''
 # 封装元素等待
 def wait_element(driver,locator,timeout=10):
     try:
@@ -111,6 +112,7 @@ def wait_element(driver,locator,timeout=10):
     except Exception as e:
         take_photo(driver)
         print ('找不到指定元素')
+'''
 
 search_kuang(driver).send_keys('测试')
 search_button(driver).click()
@@ -122,14 +124,14 @@ sleep(5)
 
 
 '''
-ele = 'new UiSelector().text()' # 单独
+ele = 'new UiSelector().text()' 
 ele = 'new UiSelector().textContains()'
 ele = 'new UiSelector().resourceId()'
 ele = 'new UiSelector().description("content-desc")'
 driver.find_elements_by_android_uiautomator()
 '''
 '''
-ele = 'resourceId().text()' # 组合
+ele = 'resourceId().text()' 
 ele = 'resourceId().childSelector()' 
 ele = 'resourceId().fromParent()'
 driver.find_element_by_android_uiautomator()

@@ -131,10 +131,12 @@ ele = 'new UiSelector().description("content-desc")'
 driver.find_elements_by_android_uiautomator()
 '''
 '''
+# Id + text定位
 ele = 'resourceId().text()' 
+# 父子关系childSelector
 ele = 'resourceId().childSelector()' 
+# 兄弟关系fromParent
 ele = 'resourceId().fromParent()'
-driver.find_element_by_android_uiautomator()
 '''
 
 driver.close_app()

@@ -10,7 +10,7 @@ def readYaml(file=file_data):
     with open(file,mode='r',encoding='utf-8') as f:
         cfg = f.read()
         yamlData = yaml.safe_load(cfg)
-        return yamlData
+        return yamlData['desired_caps']
 
 # 写入 yaml文件
 def writeYaml(file=file_data):

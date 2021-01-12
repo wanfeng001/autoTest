@@ -1,7 +1,7 @@
 import os
 import configparser
 
-class Readconfig():
+class Readconfig:
     def __init__(self):
         self.config_path = os.path.join(os.getcwd(), "..\data\cfg.ini")
         self.config = configparser.ConfigParser()

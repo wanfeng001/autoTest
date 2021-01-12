@@ -7,8 +7,7 @@ print(dir_path)
 file_path = os.path.join(dir_path, 'data\\126MailContact.xlsx')
 print(file_path)
 
-
-class ReadExcel():
+class ReadExcel:
     def __init__(self):
         self.file_path = file_path
         self.wb = load_workbook(self.file_path)

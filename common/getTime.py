@@ -2,7 +2,6 @@ import os
 import time
 from datetime import date
 
-
 class GetTime:
     @staticmethod
     def get_current_day():

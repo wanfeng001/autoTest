@@ -11,6 +11,8 @@ from common import swipe
 from common.saveScreenshot import take_photo
 from common.waitElement import wait_element
 
+# driver.set_page_load_timeout(10)
+
 desired_caps ={
 'deviceName':'M2004J7AC',
 'platformName':'Android',
@@ -23,7 +25,6 @@ desired_caps ={
 'noReset': True
 }
 driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
-
 driver.implicitly_wait(10)
 ac = driver.current_activity
 print (ac)

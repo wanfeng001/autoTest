@@ -7,9 +7,9 @@ from appium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from common import swipe
+from common import swipeScreen
 from common.saveScreenshot import take_photo
-from common.waitElement import wait_element
+from common.getElement import wait_element
 
 # driver.set_page_load_timeout(10)
 

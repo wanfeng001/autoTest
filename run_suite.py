@@ -7,11 +7,11 @@ from tools import HTMLTestRunner
 import logging
 import os
 import time
-
+from common import configpath
 logger = init_logging()
 class RunCase(unittest.TestCase):
-    file_path = os.path.dirname(os.path.abspath(__file__)) + r'\report\test_report-{}.html'.format(time.strftime('%Y%m%d %H%M%S'))
-    case_path = os.path.dirname(os.path.abspath(__file__)) + r'\script'
+    file_path = configpath.report_path
+    case_path = configpath.case_path
     logging.info(case_path)
     logging.info(file_path)
     with open(file_path,mode='wb') as f:

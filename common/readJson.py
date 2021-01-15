@@ -1,8 +1,8 @@
 import os
 import json
+from common import configpath
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-file_data = os.path.join(ROOT_DIR,'data\jsondata.json')
+file_data = configpath.json_path
 
 class ReadJson:
     def __init__(self):

@@ -1,11 +1,9 @@
 import os
 
 from openpyxl import load_workbook
+from common import  configpath
 
-dir_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print(dir_path)
-file_path = os.path.join(dir_path, 'data\\126MailContact.xlsx')
-print(file_path)
+file_path = configpath.excel_path
 
 class ReadExcel:
     def __init__(self):

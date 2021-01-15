@@ -2,10 +2,9 @@
 # pip install pyyaml
 import yaml
 from ruamel import yaml
-import os
 
-ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-file_data = os.path.join(ROOT_DIR,'data\yamldata.yaml')
+from common import configpath
+file_data = configpath.json_path
 
 
 class ReadYaml:

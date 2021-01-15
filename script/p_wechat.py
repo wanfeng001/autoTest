@@ -1,10 +1,10 @@
 from time import sleep
 from appium import webdriver
-from common import swipe
-from common.saveScreenshot import take_photo
+from common import swipeScreen
+from common.saveScreenshot import take_photo_as_file
 from selenium.webdriver.common.by import By
 
-from common.waitElement import wait_element
+from common.getElement import get_element
 
 desired_caps ={
 'deviceName':'M2004J7AC',
@@ -24,7 +24,7 @@ driver.implicitly_wait(10)
 ac = driver.current_activity
 print(ac)
 driver.wait_activity(ac,1000)
-swipe.swipeDown(driver,n=3)
+swipeScreen.swipeDown(driver, n=3)
 locator = (By.ID,'com.tencent.mm:id/cna1111')
 wait_element(driver,locator)
 driver.find_elements_by_id('com.tencent.mm:id/cna')[0].click()

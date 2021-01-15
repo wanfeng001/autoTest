@@ -2,9 +2,8 @@
 # 配置日志
 import logging
 from logging import handlers
-import os
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+from common import configpath
+BASE_DIR = configpath.ROOT_DIR
 print(BASE_DIR)
 
 '''

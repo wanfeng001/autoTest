@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from tomorrow import threads
 # 装饰器
-from common.saveScreenshot import take_photo
+from common.saveScreenshot import take_photo_as_file
 
 
 def count_time(func):

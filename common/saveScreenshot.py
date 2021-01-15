@@ -1,7 +1,5 @@
-import os
-from time import strftime
-filedir = os.path.abspath(os.path.join(os.getcwd(), "./.."))
-filename = os.path.join(filedir,'screenshot/1-{}.png'.format(strftime('%Y%m%d%H%M%S')))
+from common import configpath
+filename = configpath.picture_path
 
 def take_photo_as_file(self,driver):
     driver.save_screenshot(filename=filename)

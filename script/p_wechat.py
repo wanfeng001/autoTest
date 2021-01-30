@@ -26,7 +26,7 @@ print(ac)
 driver.wait_activity(ac,1000)
 swipeScreen.swipeDown(driver, n=3)
 locator = (By.ID,'com.tencent.mm:id/cna1111')
-wait_element(driver,locator)
+get_element(driver,locator)
 driver.find_elements_by_id('com.tencent.mm:id/cna')[0].click()
 print (driver.contexts)
 ac1 = driver.current_activity

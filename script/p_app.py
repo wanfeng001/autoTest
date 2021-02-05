@@ -119,7 +119,7 @@ search_kuang(driver).send_keys('测试')
 search_button(driver).click()
 search_kuanghou(driver).click()
 loc =(By.ID,'com.taobao.taobao:id/searchEdit')
-wait_element(driver,loc).send_keys('测试66')
+get_element(driver,loc).send_keys('测试66')
 search_button(driver).click()
 sleep(5)
 

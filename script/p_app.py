@@ -8,8 +8,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from common import swipeScreen
-from common.saveScreenshot import take_photo
-from common.getElement import wait_element
+from common.saveScreenshot import take_photo_as_file
+from common.getElement import get_element
 
 # driver.set_page_load_timeout(10)
 

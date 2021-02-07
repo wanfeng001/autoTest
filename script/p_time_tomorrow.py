@@ -5,7 +5,7 @@ from tomorrow import threads
 # 装饰器
 from common.saveScreenshot import take_photo_as_file
 
-
+globals()['hello'] = 666666
 def count_time(func):
     def int_time(*args,**kwargs):
         start_time = time.time()
@@ -73,6 +73,7 @@ def open_function1():
 
 if __name__ == '__main__':
     list1 = [1,2,3]
+    print(hello)
     @count_time
     def a():
         for i in list1:

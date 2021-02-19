@@ -28,7 +28,7 @@ class ReadJson:
 
 if __name__ == '__main__':
     j = ReadJson()
-    rt = j.getToken()
-    print(rt)
-    wt = j.writeToken(1,2)
-    print(wt)
+    rtoken = j.getToken()
+    print(rtoken)
+    wtoken = j.writeToken(1,2)
+    print(wtoken)

@@ -14,8 +14,8 @@ class Test_001(unittest.TestCase):
     #@file_data(configpath.yaml_path)
     @file_data(configpath.json_path)
     @unpack
-    def test_case02(self,token,newToken):
-        print(token,newToken)
+    def test_case02(self,username,password):
+        print(username,password)
 
     @unittest.skip
     def test_case03(self):

@@ -1,5 +1,4 @@
--
-  test1:
+- test1:
     desired_caps:
       platformName: Android
       platformVersion: '7.0'
@@ -12,5 +11,10 @@
       noReset: true
       chromeOptions:
       androidProcess: com.tencent.mm:tools
--
-  test2:
+
+- test2:
+    desired_caps:
+      platformName: ios
+
+---
+- test3:

@@ -1,8 +1,6 @@
 # pip install ruamel.yaml
 # pip install pyyaml
 import yaml
-from ruamel import yaml
-
 from common import configpath
 file_data = configpath.yaml_path
 
@@ -14,13 +12,17 @@ class ReadYaml:
     # 读取 yaml文件
     def readYaml(self):
         file = self.file_data
+        yamldata=[]
         with open(file,mode='r',encoding='utf-8') as f:
-            cfg = f.read()
-            yamlData = yaml.safe_load(cfg)
-            return yamlData
+            yamlData = yaml.load_all(f,Loader=yaml.FullLoader)
+            for i in yamlData:
+                print(i)
+                yamldata.append(i)
+            return yamldata
 
     # 写入 yaml文件
     def writeYaml(self):
+        from ruamel import yaml
         file = self.file_data
         desired_caps = {
             'platformName': 'Android',
@@ -40,4 +42,6 @@ class ReadYaml:
 if __name__ == '__main__':
     y = ReadYaml()
     yamldata = y.readYaml()
-    print(yamldata)
+    print(yamldata[0][1]['test2'])
+
+

@@ -19,7 +19,7 @@ class ReadJson:
     # 写入json文件
     def writeToken(self, *args):
         file = self.file_data
-        with open(file, mode='w') as f:
+        with open(file, mode='a') as f:
             dictData = {"test{}".format(args[2]):{"username": args[0],"password": args[1]}}  # 加‘，’可以多个值写入
             jsonData = json.dumps(dictData)
             f.write(jsonData)
@@ -30,4 +30,6 @@ if __name__ == '__main__':
     j = ReadJson()
     rtoken = j.getToken()
     print(rtoken)
+    wtoken = j.writeToken("xiaohao",123456,3)
+    print(wtoken)
 

@@ -3,8 +3,7 @@ import unittest
 from time import sleep
 from common import configpath
 from ddt import ddt, unpack, file_data,data
-import os
-from app import init_logging
+
 
 @ddt
 class Test_001(unittest.TestCase):
@@ -15,15 +14,13 @@ class Test_001(unittest.TestCase):
     #@file_data(configpath.yaml_path)
     @file_data(configpath.json_path)
     @unpack
-    def test_case03(self,token):
-        print(token)
+    def test_case02(self,token,newToken):
+        print(token,newToken)
 
     @unittest.skip
-    def test_case02(self):
+    def test_case03(self):
         print(Test_001.test_case01())
         print(self.test_case01())
-        print(3)
-        return 2
 
 if __name__ == '__main__':
     unittest.main()

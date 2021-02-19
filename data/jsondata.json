@@ -1,2 +1,10 @@
-{"test1": {"username":"xiaowang","password": 123456},
-"test2":{"username":"xiaoliu","password": 123456}}
+{
+  "test1": {
+    "username": "xiaowang",
+    "password": 123456
+  },
+  "test2": {
+    "username": "xiaoliu",
+    "password": 123456
+  }
+}

@@ -2,25 +2,27 @@ import logging
 import unittest
 from time import sleep
 from common import configpath
-from ddt import ddt, unpack, file_data,data
+from ddt import ddt, unpack, file_data, data
 
 
 @ddt
 class Test_001(unittest.TestCase):
-    @classmethod
-    def test_case01(self):
-        return 1
-    #@data([1,2,3],[4,5,6])
-    #@file_data(configpath.yaml_path)
+    # 数据驱动 - 读取jasn文件
     @file_data(configpath.json_path)
     @unpack
-    def test_case02(self,username,password):
-        print(username,password)
+    def test_case01(self, username, password):
+        print(username, password)
 
+    @classmethod
+    def test_case02(self):
+        return "test"
+
+    # 跳过用例
     @unittest.skip
     def test_case03(self):
-        print(Test_001.test_case01())
-        print(self.test_case01())
+        print(Test_001.test_case02())
+        print(self.test_case02())
+
 
 if __name__ == '__main__':
     unittest.main()

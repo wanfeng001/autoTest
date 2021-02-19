@@ -1,12 +1,16 @@
-desired_caps:
-  platformName: Android
-  platformVersion: '7.0'
-  deviceName: A5RNW18316011440
-  appPackage: com.tencent.mm
-  appActivity: .ui.LauncherUI
-  automationName: Uiautomator
-  unicodeKeyboard: true
-  resetKeyboard: true
-  noReset: true
-  chromeOptions:
-  androidProcess: com.tencent.mm:tools
+-
+  test1:
+    desired_caps:
+      platformName: Android
+      platformVersion: '7.0'
+      deviceName: A5RNW18316011440
+      appPackage: com.tencent.mm
+      appActivity: .ui.LauncherUI
+      automationName: Uiautomator
+      unicodeKeyboard: true
+      resetKeyboard: true
+      noReset: true
+      chromeOptions:
+      androidProcess: com.tencent.mm:tools
+-
+  test2:

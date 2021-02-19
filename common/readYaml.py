@@ -4,7 +4,7 @@ import yaml
 from ruamel import yaml
 
 from common import configpath
-file_data = configpath.json_path
+file_data = configpath.yaml_path
 
 
 class ReadYaml:
@@ -17,7 +17,7 @@ class ReadYaml:
         with open(file,mode='r',encoding='utf-8') as f:
             cfg = f.read()
             yamlData = yaml.safe_load(cfg)
-            return yamlData['desired_caps']
+            return yamlData
 
     # 写入 yaml文件
     def writeYaml(self):

@@ -19,8 +19,8 @@ def init_logging():
     logger = logging.getLogger()
     # 设置日志等级
     logger.setLevel(logging.INFO)
-    # 设置日志的格式
-    fmt = ('%(asctime)s - %(levelname)s - %(name)s - %(message)s')
+    # 初始化日志的格式
+    fmt = ('[%(asctime)s] [%(levelname)s] [%(name)s] %(message)s')
     formatter = logging.Formatter(fmt)
     # 将日志输除到屏幕上的处理器
     sh = logging.StreamHandler()

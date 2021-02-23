@@ -11,3 +11,8 @@ yaml_path = os.path.join(ROOT_DIR, 'data\yamldata.yaml')
 picture_path = os.path.join(ROOT_DIR, 'screenshot\\1-{}.png'.format(strftime('%Y%m%d%H%M%S')))
 case_path = os.path.join(ROOT_DIR, 'script')
 report_path = os.path.join(ROOT_DIR, 'report\\test_report-{}.html'.format(strftime('%Y%m%d%H%M%S')))
+
+absfile = os.path.abspath(__file__)
+print(absfile)
+abdfiledir = os.path.dirname(os.path.abspath(__file__))
+print(abdfiledir)

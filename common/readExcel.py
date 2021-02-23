@@ -4,7 +4,6 @@ from openpyxl import load_workbook
 from common import  configpath
 
 file_path = configpath.excel_path
-
 class ReadExcel:
     def __init__(self):
         self.file_path = file_path

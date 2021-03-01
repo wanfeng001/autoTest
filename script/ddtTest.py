@@ -8,7 +8,7 @@ from ddt import ddt, unpack, file_data, data
 @ddt
 class Test_001(unittest.TestCase):
 
-    # 数据驱动 - 读取jasn文件
+    # 数据驱动 - 读取json文件
     @file_data(configpath.json_path)
     @unpack
     def test_case01(self, username, password):

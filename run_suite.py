@@ -1,6 +1,6 @@
 import unittest
 
-from script.p_ddt import Test_001
+from script.ddtTest import Test_001
 from utils import SendEmail
 from app import init_logging
 from tools import HTMLTestRunner

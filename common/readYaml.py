@@ -12,13 +12,12 @@ class ReadYaml:
     # 读取 yaml文件
     def readYaml(self):
         file = self.file_data
-        yamldata=[]
         with open(file,mode='r',encoding='utf-8') as f:
-            yamlData = yaml.load_all(f,Loader=yaml.FullLoader)
-            for i in yamlData:
-                print(i)
-                yamldata.append(i)
-            return yamldata
+            # 多文件读取 返回生成器【使用list装载】
+            # yamlData = list(yaml.load_all(f,Loader=yaml.FullLoader))
+            # 单文件读取
+            yamlData = yaml.safe_load(f)
+            return yamlData
 
     # 写入 yaml文件
     def writeYaml(self):
@@ -41,7 +40,7 @@ class ReadYaml:
 
 if __name__ == '__main__':
     y = ReadYaml()
-    yamldata = y.readYaml()
-    print(yamldata[0][1]['test2'])
+    yamlData = y.readYaml()
+    print(yamlData)
 
 

@@ -16,5 +16,6 @@
     desired_caps:
       platformName: ios
 
----
-- test3:
+# ’---‘分隔符另外一个文件
+#---
+#- test3:

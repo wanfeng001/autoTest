@@ -12,7 +12,7 @@ from common.saveScreenshot import take_photo_as_file
 from common.getElement import get_element
 
 # driver.set_page_load_timeout(10)
-
+#  appium多设备连接
 desired_caps ={
 'deviceName':'M2004J7AC',
 'platformName':'Android',

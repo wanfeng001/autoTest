@@ -1,12 +1,15 @@
 import os
+import time
+from datetime import date
 
 from openpyxl import load_workbook
 from common import  configpath
 
 file_path = configpath.excel_path
+file1_path = configpath.excel1_path
 class ReadExcel:
     def __init__(self):
-        self.file_path = file_path
+        self.file_path = file1_path
         self.wb = load_workbook(self.file_path)
 
     def get_column_value(self, sheet_name, col_num):
@@ -40,5 +43,5 @@ if __name__ == '__main__':
     read_excel = ReadExcel()
     sheet_name = read_excel.wb.sheetnames
     print(sheet_name)
-    print(read_excel.get_row_value(sheet_name[0], 2))
-    print(read_excel.get_column_value(sheet_name[0], 2))
+    print(read_excel.get_row_value(sheet_name[0], 1))
+    print(read_excel.get_column_value(sheet_name[0], configpath.testResult))

@@ -15,7 +15,7 @@ class GetTime:
     @staticmethod
     def get_current_time():
         try:
-            current_time = time.strftime('%H-%M-%S')
+            current_time = time.strftime('%Y/%m/%d %H:%M')
         except Exception as e:
             raise e
         else:

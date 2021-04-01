@@ -21,6 +21,10 @@ print(ROOT_DIR)
 
 ''' EXCEL 列名对应位置 '''
 priority = 5
-testResult = 9
-testCount = 10
-isExecute = 12
+testResult = 11
+testCount = 12
+isExecute = 14
+testTime = 15
+
+account = 376531877
+password = "liuhaotao1015"

@@ -1,3 +1,0 @@
-[2021-04-08 08:43:25,740] [INFO] [root] Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="useralias"]"}
-  (Session info: headless chrome=89.0.4389.114)
-

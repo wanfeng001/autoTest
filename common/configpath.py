@@ -20,11 +20,9 @@ print(abdfiledir)
 print(ROOT_DIR)
 
 ''' EXCEL 列名对应位置 '''
-priority = 5
-testResult = 11
-testCount = 12
-isExecute = 14
-testTime = 15
-
-account = 376531877
-password = "liuhaotao1015"
+testCase = 3
+priority = 4
+Account = 5
+Password = 6
+Expect = 7
+isExecute = 8

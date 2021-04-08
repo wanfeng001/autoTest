@@ -2,7 +2,7 @@ import unittest
 
 from script.ddtTest import Test_001
 from utils import SendEmail
-from app import init_logging
+from setLog import init_logging
 from tools import HTMLTestRunner
 import logging
 import os

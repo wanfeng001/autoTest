@@ -10,3 +10,4 @@ def get_element(driver,locator,timeout=10):
     except Exception as e:
         take_photo_as_file(driver)
         print ('找不到指定元素')
+        print(e)

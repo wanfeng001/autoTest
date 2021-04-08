@@ -1,99 +1,99 @@
 [ {
-  "uid" : "b9c25eff1fdae6fb",
-  "name" : "# 密码为空",
+  "uid" : "4cf281ec77d9f94f",
+  "name" : "# 登录场景测试",
   "time" : {
-    "start" : 1617851685281,
-    "stop" : 1617851685281,
+    "start" : 1617882415901,
+    "stop" : 1617882417351,
+    "duration" : 1450
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9681f5261273d33c",
+  "name" : "# 错误的密码",
+  "time" : {
+    "start" : 1617882457133,
+    "stop" : 1617882457133,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "8a44448114029fee",
-  "name" : "# ['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']",
+  "uid" : "8817b70c2ee0b425",
+  "name" : "# 登录场景测试",
   "time" : {
-    "start" : 1617851634776,
-    "stop" : 1617851637039,
-    "duration" : 2263
+    "start" : 1617882424520,
+    "stop" : 1617882425926,
+    "duration" : 1406
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "650985895e8cc5d0",
-  "name" : "# ['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']",
+  "uid" : "c852be902d662a99",
+  "name" : "# 错误的账号",
   "time" : {
-    "start" : 1617851681755,
-    "stop" : 1617851683144,
-    "duration" : 1389
+    "start" : 1617882457123,
+    "stop" : 1617882457123,
+    "duration" : 0
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "9db49f1b96f89642",
-  "name" : "# ['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']",
+  "uid" : "f5b30535e6c24fc2",
+  "name" : "# 账号为空",
   "time" : {
-    "start" : 1617851673284,
-    "stop" : 1617851674665,
-    "duration" : 1381
+    "start" : 1617882457133,
+    "stop" : 1617882457133,
+    "duration" : 0
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "normal"
 }, {
-  "uid" : "58b9a8a6690dbe75",
-  "name" : "# ['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']",
-  "time" : {
-    "start" : 1617851652682,
-    "stop" : 1617851654082,
-    "duration" : 1400
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e635ae8aa60f15fd",
+  "uid" : "e347338638998086",
   "name" : "# 用例执行失败",
   "time" : {
-    "start" : 1617851685291,
-    "stop" : 1617851685291,
+    "start" : 1617882457143,
+    "stop" : 1617882457143,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "blocker"
 }, {
-  "uid" : "3380d43655a1855b",
-  "name" : "# 账号为空",
+  "uid" : "337a7bc1b56e6601",
+  "name" : "# 登录场景测试",
   "time" : {
-    "start" : 1617851685281,
-    "stop" : 1617851685281,
-    "duration" : 0
+    "start" : 1617882453639,
+    "stop" : 1617882455023,
+    "duration" : 1384
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b072e004b8788240",
-  "name" : "# 错误的账号",
+  "uid" : "8f649bc6dca9fb5b",
+  "name" : "# 登录场景测试",
   "time" : {
-    "start" : 1617851685271,
-    "stop" : 1617851685271,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "74d588106276297e",
-  "name" : "# ['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']",
-  "time" : {
-    "start" : 1617851644150,
-    "stop" : 1617851645555,
+    "start" : 1617882394874,
+    "stop" : 1617882396279,
     "duration" : 1405
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3400210659df34b6",
-  "name" : "# 错误的密码",
+  "uid" : "6ab1d753058b8632",
+  "name" : "# 登录场景测试",
   "time" : {
-    "start" : 1617851685281,
-    "stop" : 1617851685281,
+    "start" : 1617882433046,
+    "stop" : 1617882434416,
+    "duration" : 1370
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dbc1b727cc019443",
+  "name" : "# 密码为空",
+  "time" : {
+    "start" : 1617882457133,
+    "stop" : 1617882457133,
     "duration" : 0
   },
   "status" : "skipped",

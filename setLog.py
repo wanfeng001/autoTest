@@ -31,7 +31,7 @@ def init_logging():
     # 将日志输出到指定位置的处理器 th
     th = handlers.TimedRotatingFileHandler(filename=log_path,
                                            interval=1,
-                                           backupCount=50,
+                                           backupCount=10,
                                            when='S',
                                            encoding='utf-8')
     # 添加日志格式

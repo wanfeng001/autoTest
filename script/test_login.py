@@ -1,6 +1,6 @@
 import time
 import logging
-from app import init_logging
+from setLog import init_logging
 from selenium import webdriver
 from common import configpath
 from common import readExcel
@@ -31,7 +31,6 @@ hua_button = (By.XPATH, '//*[@id="tcaptcha_drag_thumb"]')
 
 # 测试用例名称那一列数据
 # caseName = ReadExcel().get_column_value('登录模块用例', configpath.testCase)
-
 
 @allure.feature('登录功能')
 @allure.testcase('https://mail.qq.com/', 'qq邮箱')

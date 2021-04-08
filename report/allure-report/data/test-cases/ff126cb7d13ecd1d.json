@@ -1,0 +1,193 @@
+{
+  "uid" : "ff126cb7d13ecd1d",
+  "name" : "# 1234",
+  "fullName" : "test_login.Test_login#test_correct_login",
+  "historyId" : "3c5ef514cbe6d2b34ac1072ba60c3f67",
+  "time" : {
+    "start" : 1617876097473,
+    "stop" : 1617876100812,
+    "duration" : 3339
+  },
+  "description" : "正确账号、密码",
+  "descriptionHtml" : "<p>正确账号、密码</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1617876078458,
+      "stop" : 1617876097472,
+      "duration" : 19014
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "正确账号、密码",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "输入账号",
+      "time" : {
+        "start" : 1617876097523,
+        "stop" : 1617876097623,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1617876097623,
+        "stop" : 1617876097720,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "点击登录按钮",
+      "time" : {
+        "start" : 1617876097720,
+        "stop" : 1617876097819,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "校验结果",
+      "time" : {
+        "start" : 1617876097819,
+        "stop" : 1617876100812,
+        "duration" : 2993
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "5fd5b159b2d0b186",
+      "name" : "2b533338-a76c-4bfb-ae0e-17adb2fcbb78-attachment.attach",
+      "source" : "5fd5b159b2d0b186.attach",
+      "type" : "text/plain",
+      "size" : 6
+    }, {
+      "uid" : "7fef4faff20f4f5c",
+      "name" : "log",
+      "source" : "7fef4faff20f4f5c.txt",
+      "type" : "text/plain",
+      "size" : 173
+    }, {
+      "uid" : "1e90bc5180e04da6",
+      "name" : "stderr",
+      "source" : "1e90bc5180e04da6.txt",
+      "type" : "text/plain",
+      "size" : 174
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1617876100815,
+      "stop" : 1617876102897,
+      "duration" : 2082
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例1：123"
+  }, {
+    "name" : "feature",
+    "value" : "登录功能"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BN9QCCJ"
+  }, {
+    "name" : "thread",
+    "value" : "21336-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "pwd",
+    "value" : "'liuhaotao1015'"
+  }, {
+    "name" : "user",
+    "value" : "376531877"
+  } ],
+  "links" : [ {
+    "name" : "qq邮箱",
+    "url" : "https://mail.qq.com/",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff126cb7d13ecd1d.json",
+  "parameterValues" : [ "'liuhaotao1015'", "376531877" ]
+}

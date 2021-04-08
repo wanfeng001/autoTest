@@ -2,7 +2,7 @@ import os
 import pytest
 from selenium import webdriver
 import allure
-
+from common import configpath
 @pytest.fixture(scope='function',autouse=True)
 def browser():
     # 静默执行
@@ -20,11 +20,13 @@ def browser():
     _driver = None
 
 # 钩子函数 添加工作环境 environment.properities
-def pytest_sessionfinish(session):
-    with open("{}/allure-raw/environment.properties".format(session.config.rootdir), "w") as f:
+def pytest_sessionfinish():
+    r = configpath.ROOT_DIR
+    with open(r + "/report/allure-raw/environment.properties", "w") as f:
         f.write("browser=chrome\nautor=wanfeng\ndomain=https://mail.qq.com/")
 
-# # allure 失败用例自动截图
+
+# allure 失败用例自动截图
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     '''

@@ -1,0 +1,190 @@
+{
+  "uid" : "74d588106276297e",
+  "name" : "# ['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']",
+  "fullName" : "test_login.Test_login#test_correct_login",
+  "historyId" : "ff24e5b140732b2045c921b8a0dbf5a4",
+  "time" : {
+    "start" : 1617851644150,
+    "stop" : 1617851645555,
+    "duration" : 1405
+  },
+  "description" : "正确账号、密码",
+  "descriptionHtml" : "<p>正确账号、密码</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1617851639174,
+      "stop" : 1617851644150,
+      "duration" : 4976
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "正确账号、密码",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "输入账号",
+      "time" : {
+        "start" : 1617851644190,
+        "stop" : 1617851644296,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1617851644296,
+        "stop" : 1617851644393,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击登录按钮",
+      "time" : {
+        "start" : 1617851644393,
+        "stop" : 1617851644519,
+        "duration" : 126
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "校验结果",
+      "time" : {
+        "start" : 1617851644519,
+        "stop" : 1617851645555,
+        "duration" : 1036
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "bcec3cd3e506c14a",
+      "name" : "log",
+      "source" : "bcec3cd3e506c14a.txt",
+      "type" : "text/plain",
+      "size" : 176
+    }, {
+      "uid" : "2fb93a641fef0829",
+      "name" : "stdout",
+      "source" : "2fb93a641fef0829.txt",
+      "type" : "text/plain",
+      "size" : 49
+    }, {
+      "uid" : "39ea8ce0eb7ea6d9",
+      "name" : "stderr",
+      "source" : "39ea8ce0eb7ea6d9.txt",
+      "type" : "text/plain",
+      "size" : 177
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1617851645565,
+      "stop" : 1617851647664,
+      "duration" : 2099
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用例1：['正确的账号、密码、验证码', '正确的账号、错误的密码、正确的验证码', '错误的账号、正确的密码、正确的验证码', '账号为空、正确的密码、验证码', '密码为空、正确的账号、验证码']"
+  }, {
+    "name" : "feature",
+    "value" : "登录功能"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BN9QCCJ"
+  }, {
+    "name" : "thread",
+    "value" : "17228-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "pwd",
+    "value" : "'liuhaotao'"
+  }, {
+    "name" : "user",
+    "value" : "376531877"
+  } ],
+  "links" : [ {
+    "name" : "qq邮箱",
+    "url" : "https://mail.qq.com/",
+    "type" : "test_case"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "74d588106276297e.json",
+  "parameterValues" : [ "'liuhaotao'", "376531877" ]
+}

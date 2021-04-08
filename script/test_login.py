@@ -6,6 +6,7 @@ from common import configpath
 from common import readExcel
 from common import getTime
 from common import getElement
+from common.readExcel import ReadExcel
 
 import pytest
 import allure
@@ -28,27 +29,28 @@ name = (By.XPATH, '//*[@id="useralias"]')
 # 滑动按钮 22.5px 193.5px  移动距离 171px
 hua_button = (By.XPATH, '//*[@id="tcaptcha_drag_thumb"]')
 
+# 测试用例名称那一列数据
+# caseName = ReadExcel().get_column_value('登录模块用例', configpath.testCase)
+
 
 @allure.feature('登录功能')
-@allure.testcase('https://mail.qq.com/','qq邮箱')
+@allure.testcase('https://mail.qq.com/', 'qq邮箱')
 class Test_login():
-    @allure.story('用例1：正确账号、密码')
-    @allure.title('# 正确账号、密码')
-    @pytest.mark.parametrize("user,pwd",readExcel.get_data())
-    def test_correct_login(self,browser,user,pwd):
+    @allure.severity(severity_level='normal')
+    @allure.story('用例1：登录功能')
+    @allure.title('# 登录场景测试')
+    @pytest.mark.parametrize("user,pwd", readExcel.get_data())
+    def test_correct_login(self, browser, user, pwd):
         '''正确账号、密码'''
         browser.switch_to.frame(id)
-        print('输出的账号为{}，密码为{}'.format(user,pwd))
         with allure.step("输入账号"):
             ac = browser.find_element(account[0], account[1])
             ac.clear()
             ac.send_keys(user)
-            # ac.send_keys(configpath.account)
         with allure.step("输入密码"):
             pw = browser.find_element(password[0], password[1])
             pw.clear()
             pw.send_keys(pwd)
-            #pw.send_keys(configpath.password)
         with allure.step("点击登录按钮"):
             bt = browser.find_element(button[0], button[1])
             bt.click()
@@ -57,8 +59,9 @@ class Test_login():
                 err = browser.find_element(error_msg[0], error_msg[1]).text
                 logging.info(err)
                 time.sleep(1)
-                t = browser.title
-                assert "QQ邮箱" == t, '没有登录进去'
+                t1 = browser.title
+                assert "QQ邮箱" == t1, '没有登录进去'
+
             except Exception as e:
                 logging.info(e)
         # with allure.step("校验结果"):

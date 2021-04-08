@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_login.py:61 
+[32mINFO    [0m root:test_login.py:67 没有登录进去
+assert 'QQ邮箱' == 'QQ邮箱 2007版'
+  - QQ邮箱 2007版
+  + QQ邮箱

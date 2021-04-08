@@ -1,0 +1,143 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_login",
+    "children" : [ {
+      "name" : "Test_login",
+      "children" : [ {
+        "name" : "# 正确账号、密码",
+        "uid" : "40f79d5c67726225",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617849929044,
+          "stop" : 1617849931180,
+          "duration" : 2136
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'liuhaotao1015'", "376531877" ]
+      }, {
+        "name" : "# 正确账号、密码",
+        "uid" : "c985e03d5b31c8cd",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617849938293,
+          "stop" : 1617849939684,
+          "duration" : 1391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'liuhaotao'", "376531877" ]
+      }, {
+        "name" : "# 正确账号、密码",
+        "uid" : "42253fca9372dd84",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617849958890,
+          "stop" : 1617849960300,
+          "duration" : 1410
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'liuhaotao1015'", "123456789" ]
+      }, {
+        "name" : "# 正确账号、密码",
+        "uid" : "5316be9ed991454",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617849979500,
+          "stop" : 1617849980877,
+          "duration" : 1377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'liuhaotao1015'", "''" ]
+      }, {
+        "name" : "# 正确账号、密码",
+        "uid" : "e47dc956a474eb42",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617849987911,
+          "stop" : 1617849989292,
+          "duration" : 1381
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "376531877" ]
+      }, {
+        "name" : "# 错误的账号",
+        "uid" : "f459fed438a7ca00",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1617849991399,
+          "stop" : 1617849991399,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "# 错误的密码",
+        "uid" : "978d1de322318fe1",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1617849991399,
+          "stop" : 1617849991399,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "# 账号为空",
+        "uid" : "38404374cfc7ef72",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1617849991399,
+          "stop" : 1617849991399,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "# 用例执行失败",
+        "uid" : "39ff7e2a7f77d20b",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1617849991409,
+          "stop" : 1617849991409,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "# 密码为空",
+        "uid" : "43b983b06f669926",
+        "parentUid" : "c73554e308768e333e9bb5a039516aed",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1617849991409,
+          "stop" : 1617849991409,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c73554e308768e333e9bb5a039516aed"
+    } ],
+    "uid" : "7db21133bf389fa43eef71e3fe0b0e68"
+  } ]
+}

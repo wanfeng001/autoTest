@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "chrome" ],
+  "name" : "browser"
+}, {
+  "values" : [ "wanfeng" ],
+  "name" : "autor"
+}, {
+  "values" : [ "https://mail.qq.com/" ],
+  "name" : "domain"
+} ]

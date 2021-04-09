@@ -1,20 +1,30 @@
-- test1:
-    desired_caps:
-      platformName: Android
-      platformVersion: '7.0'
-      deviceName: A5RNW18316011440
-      appPackage: com.tencent.mm
-      appActivity: .ui.LauncherUI
-      automationName: Uiautomator
-      unicodeKeyboard: true
-      resetKeyboard: true
-      noReset: true
-      chromeOptions:
-      androidProcess: com.tencent.mm:tools
+#- test1:
+#    desired_caps:
+#      platformName: Android
+#      platformVersion: '7.0'
+#      deviceName: A5RNW18316011440
+#      appPackage: com.tencent.mm
+#      appActivity: .ui.LauncherUI
+#      automationName: Uiautomator
+#      unicodeKeyboard: true
+#      resetKeyboard: true
+#      noReset: true
+#      chromeOptions:
+#      androidProcess: com.tencent.mm:tools
+#
+#- test2:
+#    desired_caps:
+#      platformName: ios
 
-- test2:
-    desired_caps:
-      platformName: ios
+test_login:
+  - user: 376531877
+    password: liuhaotao
+  - user1: 376531877
+    password1: liuhaotao
+  - user2: 376531877
+    password1: liuhaotao
+
+
 
 # ’---‘分隔符另外一个文件
 #---

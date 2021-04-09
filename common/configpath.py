@@ -13,12 +13,6 @@ picture_path = os.path.join(ROOT_DIR, 'screenshot\\1-{}.png'.format(strftime('%Y
 case_path = os.path.join(ROOT_DIR, 'script')
 report_path = os.path.join(ROOT_DIR, 'report\\test_report-{}.html'.format(strftime('%Y%m%d%H%M%S')))
 
-absfile = os.path.abspath(__file__)
-print(absfile)
-abdfiledir = os.path.dirname(os.path.abspath(__file__))
-print(abdfiledir)
-print(ROOT_DIR)
-
 ''' EXCEL 列名对应位置 '''
 testCase = 3
 priority = 4

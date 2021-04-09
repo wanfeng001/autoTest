@@ -41,6 +41,5 @@ class ReadYaml:
 if __name__ == '__main__':
     y = ReadYaml()
     yamlData = y.readYaml()
-    print(yamlData)
-
+    print(yamlData['test_login'])
 

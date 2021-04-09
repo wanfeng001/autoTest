@@ -4,106 +4,67 @@
   "children" : [ {
     "name" : "DESKTOP-BN9QCCJ",
     "children" : [ {
-      "name" : "8380-MainThread",
+      "name" : "16084-MainThread",
       "children" : [ {
         "name" : "# 登录场景测试",
-        "uid" : "337a7bc1b56e6601",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
+        "uid" : "c2496613b78ae0c1",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
         "status" : "passed",
         "time" : {
-          "start" : 1617882453639,
-          "stop" : 1617882455023,
-          "duration" : 1384
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "''", "376531877" ]
-      }, {
-        "name" : "# 登录场景测试",
-        "uid" : "8817b70c2ee0b425",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
-        "status" : "passed",
-        "time" : {
-          "start" : 1617882424520,
-          "stop" : 1617882425926,
-          "duration" : 1406
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'liuhaotao'", "123456789" ]
-      }, {
-        "name" : "# 账号为空",
-        "uid" : "f5b30535e6c24fc2",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
-        "status" : "skipped",
-        "time" : {
-          "start" : 1617882457133,
-          "stop" : 1617882457133,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "# 登录场景测试",
-        "uid" : "8f649bc6dca9fb5b",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
-        "status" : "passed",
-        "time" : {
-          "start" : 1617882394874,
-          "stop" : 1617882396279,
-          "duration" : 1405
+          "start" : 1617934007277,
+          "stop" : 1617934008694,
+          "duration" : 1417
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'liuhaotao1'", "376531877" ]
       }, {
         "name" : "# 登录场景测试",
-        "uid" : "4cf281ec77d9f94f",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
+        "uid" : "3914fca542885bb3",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
         "status" : "passed",
         "time" : {
-          "start" : 1617882415901,
-          "stop" : 1617882417351,
-          "duration" : 1450
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'liuhaotao1'", "376531877" ]
-      }, {
-        "name" : "# 登录场景测试",
-        "uid" : "6ab1d753058b8632",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
-        "status" : "passed",
-        "time" : {
-          "start" : 1617882433046,
-          "stop" : 1617882434416,
-          "duration" : 1370
+          "start" : 1617934024883,
+          "stop" : 1617934026261,
+          "duration" : 1378
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'liuhaotao'", "''" ]
       }, {
-        "name" : "# 错误的账号",
-        "uid" : "c852be902d662a99",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
+        "name" : "# 密码为空",
+        "uid" : "722832bd28aaa30e",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
         "status" : "skipped",
         "time" : {
-          "start" : 1617882457123,
-          "stop" : 1617882457123,
+          "start" : 1617934048955,
+          "stop" : 1617934048955,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "# 错误的密码",
-        "uid" : "9681f5261273d33c",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
+        "name" : "# 登录场景测试",
+        "uid" : "85557e591ca8178c",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617934045442,
+          "stop" : 1617934046818,
+          "duration" : 1376
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "376531877" ]
+      }, {
+        "name" : "# 错误的账号",
+        "uid" : "c84c7d0db420243d",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
         "status" : "skipped",
         "time" : {
-          "start" : 1617882457133,
-          "stop" : 1617882457133,
+          "start" : 1617934048935,
+          "stop" : 1617934048935,
           "duration" : 0
         },
         "flaky" : false,
@@ -111,32 +72,71 @@
         "parameters" : [ ]
       }, {
         "name" : "# 用例执行失败",
-        "uid" : "e347338638998086",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
+        "uid" : "aecc3d1aaf8b88e3",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
         "status" : "skipped",
         "time" : {
-          "start" : 1617882457143,
-          "stop" : 1617882457143,
+          "start" : 1617934048955,
+          "stop" : 1617934048955,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "# 密码为空",
-        "uid" : "dbc1b727cc019443",
-        "parentUid" : "1806a9f6fd059ee361fae8ffdc6e5cef",
+        "name" : "# 登录场景测试",
+        "uid" : "5bede27be5b39dfe",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617934015906,
+          "stop" : 1617934017313,
+          "duration" : 1407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'liuhaotao'", "123456789" ]
+      }, {
+        "name" : "# 账号为空",
+        "uid" : "25cba6b0624df706",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
         "status" : "skipped",
         "time" : {
-          "start" : 1617882457133,
-          "stop" : 1617882457133,
+          "start" : 1617934048945,
+          "stop" : 1617934048945,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "# 登录场景测试",
+        "uid" : "4ee27f8cf5adc2a0",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617933986176,
+          "stop" : 1617933987584,
+          "duration" : 1408
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'liuhaotao1'", "376531877" ]
+      }, {
+        "name" : "# 错误的密码",
+        "uid" : "ec4f78cf021b2906",
+        "parentUid" : "adaa7fb1c31b4bb09768de7beb92b247",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1617934048945,
+          "stop" : 1617934048945,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "1806a9f6fd059ee361fae8ffdc6e5cef"
+      "uid" : "adaa7fb1c31b4bb09768de7beb92b247"
     } ],
     "uid" : "4324928e6ae4f3b1ae5c15573e7c04df"
   } ]

@@ -1,101 +1,101 @@
 [ {
-  "uid" : "e347338638998086",
+  "uid" : "c2496613b78ae0c1",
+  "name" : "# 登录场景测试",
+  "time" : {
+    "start" : 1617934007277,
+    "stop" : 1617934008694,
+    "duration" : 1417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "722832bd28aaa30e",
+  "name" : "# 密码为空",
+  "time" : {
+    "start" : 1617934048955,
+    "stop" : 1617934048955,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c84c7d0db420243d",
+  "name" : "# 错误的账号",
+  "time" : {
+    "start" : 1617934048935,
+    "stop" : 1617934048935,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "3914fca542885bb3",
+  "name" : "# 登录场景测试",
+  "time" : {
+    "start" : 1617934024883,
+    "stop" : 1617934026261,
+    "duration" : 1378
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ee27f8cf5adc2a0",
+  "name" : "# 登录场景测试",
+  "time" : {
+    "start" : 1617933986176,
+    "stop" : 1617933987584,
+    "duration" : 1408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bede27be5b39dfe",
+  "name" : "# 登录场景测试",
+  "time" : {
+    "start" : 1617934015906,
+    "stop" : 1617934017313,
+    "duration" : 1407
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aecc3d1aaf8b88e3",
   "name" : "# 用例执行失败",
   "time" : {
-    "start" : 1617882457143,
-    "stop" : 1617882457143,
+    "start" : 1617934048955,
+    "stop" : 1617934048955,
     "duration" : 0
   },
   "status" : "skipped",
   "severity" : "blocker"
 }, {
-  "uid" : "8817b70c2ee0b425",
-  "name" : "# 登录场景测试",
-  "time" : {
-    "start" : 1617882424520,
-    "stop" : 1617882425926,
-    "duration" : 1406
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dbc1b727cc019443",
-  "name" : "# 密码为空",
-  "time" : {
-    "start" : 1617882457133,
-    "stop" : 1617882457133,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "c852be902d662a99",
-  "name" : "# 错误的账号",
-  "time" : {
-    "start" : 1617882457123,
-    "stop" : 1617882457123,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "337a7bc1b56e6601",
-  "name" : "# 登录场景测试",
-  "time" : {
-    "start" : 1617882453639,
-    "stop" : 1617882455023,
-    "duration" : 1384
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4cf281ec77d9f94f",
-  "name" : "# 登录场景测试",
-  "time" : {
-    "start" : 1617882415901,
-    "stop" : 1617882417351,
-    "duration" : 1450
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6ab1d753058b8632",
-  "name" : "# 登录场景测试",
-  "time" : {
-    "start" : 1617882433046,
-    "stop" : 1617882434416,
-    "duration" : 1370
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8f649bc6dca9fb5b",
-  "name" : "# 登录场景测试",
-  "time" : {
-    "start" : 1617882394874,
-    "stop" : 1617882396279,
-    "duration" : 1405
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f5b30535e6c24fc2",
-  "name" : "# 账号为空",
-  "time" : {
-    "start" : 1617882457133,
-    "stop" : 1617882457133,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "9681f5261273d33c",
+  "uid" : "ec4f78cf021b2906",
   "name" : "# 错误的密码",
   "time" : {
-    "start" : 1617882457133,
-    "stop" : 1617882457133,
+    "start" : 1617934048945,
+    "stop" : 1617934048945,
     "duration" : 0
   },
   "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "25cba6b0624df706",
+  "name" : "# 账号为空",
+  "time" : {
+    "start" : 1617934048945,
+    "stop" : 1617934048945,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "85557e591ca8178c",
+  "name" : "# 登录场景测试",
+  "time" : {
+    "start" : 1617934045442,
+    "stop" : 1617934046818,
+    "duration" : 1376
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

@@ -15,18 +15,17 @@ print(BASE_DIR)
 
 
 def init_logging():
-    # 初始化记录器
     logger = logging.getLogger()
-    # 设置日志等级
+    # 设置日志级别
     logger.setLevel(logging.INFO)
-    # 初始化日志的格式
-    fmt = ('[%(asctime)s] [%(levelname)s] [%(name)s] %(message)s')
+    # 设置日志的格式
+    fmt = ('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s')
     formatter = logging.Formatter(fmt)
     # 将日志输除到屏幕上的处理器
     sh = logging.StreamHandler()
     # 添加日志格式
     sh.setFormatter(formatter)
-    # 日志存放位置
+    # 设置日志存放位置
     log_path = BASE_DIR + "/logs/test.log"
     # 将日志输出到指定位置的处理器 th
     th = handlers.TimedRotatingFileHandler(filename=log_path,

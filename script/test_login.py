@@ -1,12 +1,8 @@
 import time
 import logging
-from setLog import init_logging
-from selenium import webdriver
+from tools.setLog import init_logging
 from common import configpath
 from common import readExcel
-from common import getTime
-from common import getElement
-from common.readExcel import ReadExcel
 
 import pytest
 import allure

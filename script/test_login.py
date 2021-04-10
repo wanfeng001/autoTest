@@ -1,6 +1,5 @@
 import time
-import logging
-from tools.setLog import init_logging
+from tools.setLog import Logger
 from common import configpath
 from common import readExcel
 
@@ -9,7 +8,7 @@ import allure
 from selenium.webdriver.common.by import By
 
 # 初始化日志
-init_logging()
+logger =Logger().getlog()
 # 账号元素
 account = (By.XPATH, '//*[@id="u"]')
 # 密码元素
@@ -52,13 +51,13 @@ class Test_login():
         with allure.step("校验结果"):
             try:
                 err = browser.find_element(error_msg[0], error_msg[1]).text
-                logging.info(err)
+                logger.info(err)
                 time.sleep(1)
                 t1 = browser.title
                 assert "QQ邮箱" == t1, '没有登录进去'
 
             except Exception as e:
-                logging.info(e)
+                logger.info(e)
         # with allure.step("校验结果"):
         #     try:
         #         time.sleep(1)
@@ -85,9 +84,9 @@ class Test_login():
         time.sleep(3)
         try:
             err = browser.find_element(error_msg[0], error_msg[1]).text
-            logging.info(err)
+            logger.info(err)
         except Exception as e:
-            logging.info(e)
+            logger.info(e)
 
     @allure.story('用例3：错误的密码')
     @allure.title('# 错误的密码')
@@ -106,9 +105,9 @@ class Test_login():
         time.sleep(3)
         try:
             err = browser.find_element(error_msg[0], error_msg[1]).text
-            logging.info(err)
+            logger.info(err)
         except Exception as e:
-            logging.info(e)
+            logger.info(e)
 
     @allure.story('用例4：账号为空')
     @allure.title('# 账号为空')
@@ -126,9 +125,9 @@ class Test_login():
         bt.click()
         try:
             err = browser.find_element(error_msg[0], error_msg[1]).text
-            logging.info(err)
+            logger.info(err)
         except Exception as e:
-            logging.info(e)
+            logger.info(e)
 
     @allure.story('用例5：密码为空')
     @allure.title('# 密码为空')
@@ -146,9 +145,9 @@ class Test_login():
         bt.click()
         try:
             err = browser.find_element(error_msg[0], error_msg[1]).text
-            logging.info(err)
+            logger.info(err)
         except Exception as e:
-            logging.info(e)
+            logger.info(e)
 
     @allure.story('用例6：失败用例截图')
     @allure.title('# 用例执行失败')
@@ -167,10 +166,10 @@ class Test_login():
         bt.click()
         try:
             err = browser.find_element(error_msg[0], error_msg[1]).text
-            logging.info(err)
+            logger.info(err)
         except Exception as e:
-            logging.info(e)
+            logger.info(e)
 
 
 if __name__ == '__main__':
-    pytest.main(['-s'])
+    pytest.main()

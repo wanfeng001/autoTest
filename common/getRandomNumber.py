@@ -17,7 +17,3 @@ class creatNumber:
         data = a + ran_str
         return data
 
-# a = creatNumber.getPhoneNumber()
-# print(a)
-# b = creatNumber.getAccount(8)
-# print(b)

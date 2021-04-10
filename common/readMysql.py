@@ -1,12 +1,9 @@
 # pip install PyMySQL
-from tools.setLog import init_logging
-import logging
-
-init_logging()
+from tools.setLog import Logger
 import pymysql
 from common.readConfig import Readconfig
 
-
+logger = Logger().getlog()
 class ReadMysql:
     def __init__(self):
         self.db = pymysql.connect(
@@ -23,7 +20,7 @@ class ReadMysql:
         try:
             self.cur.execute(sql)
             data = self.cur.fetchall()
-            logging.info("正在输出...{}".format(data))
+            logger.info("正在输出...{}".format(data))
             return data
         except Exception as e:
             raise e
@@ -32,7 +29,7 @@ class ReadMysql:
         try:
             self.cur.execute(sql)
             data = self.cur.fetchone()
-            logging.info("正在输出...{}".format(data))
+            logger.info("正在输出...{}".format(data))
             return data
         except Exception as e:
             raise e

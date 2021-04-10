@@ -19,6 +19,3 @@ class Readconfig:
         value =Readconfig().config.get('mysql_db',value)
         return value
 
-
-if __name__ == '__main__':
-    pass

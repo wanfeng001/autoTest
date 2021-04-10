@@ -1,10 +1,12 @@
 # coding:utf-8
 # 配置日志
 import logging
+import time
 from logging import handlers
 from common import configpath
-BASE_DIR = configpath.ROOT_DIR
-print(BASE_DIR)
+from common.getTime import GetTime
+
+
 
 '''
     Logger 记录器，暴露了应用程序代码能直接使用的接口。
@@ -13,28 +15,31 @@ print(BASE_DIR)
     Formatter 格式化器，指明了最终输出中日志记录的布局。
 '''
 
+class Logger:
+    def __init__(self, CmdLevel=logging.INFO, FileLevel=logging.INFO):
+        BASE_DIR = configpath.ROOT_DIR
+        self.logger = logging.getLogger()
+        self.logger.setLevel(logging.DEBUG)  # 设置日志默认级别为DEBUG
+        fmt = logging.Formatter('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s')  # 设置日志输出格式
+        currTime = GetTime.get_current_time()  # 格式化当前时间
+        log_path = BASE_DIR + "\\logs"  # 设置日志文件保存路径
 
-def init_logging(logLevel=logging.INFO):
-    logger = logging.getLogger()
-    # 设置日志级别
-    logger.setLevel(logLevel)
-    # 设置日志的格式
-    fmt = ('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s')
-    formatter = logging.Formatter(fmt)
-    # 将日志输除到屏幕上的处理器
-    sh = logging.StreamHandler()
-    # 添加日志格式
-    sh.setFormatter(formatter)
-    # 设置日志存放位置
-    log_path = BASE_DIR + "/logs/test.log"
-    # 将日志输出到指定位置的处理器 th
-    th = handlers.TimedRotatingFileHandler(filename=log_path,
-                                           interval=1,
-                                           backupCount=10,
-                                           when='S',
-                                           encoding='utf-8')
-    # 添加日志格式
-    th.setFormatter(formatter)
-    # 添加处理器
-    logger.addHandler(sh)
-    logger.addHandler(th)
+        print('得到的日志路径为：', log_path)
+        log_name = log_path + currTime + '.log'  # 设置日志文件名称
+
+        # 设置由文件输出
+        fh = logging.FileHandler(log_name, encoding='utf-8')  # 采用utf-8字符集格式防止出现中文乱码
+        fh.setFormatter(fmt)
+        fh.setLevel(FileLevel)  # 日志级别为INFO
+
+        # 设置日志由控制台输出
+        sh = logging.StreamHandler()
+        sh.setFormatter(fmt)
+        sh.setLevel(CmdLevel)
+
+        self.logger.addHandler(fh)  # 添加handler
+        self.logger.addHandler(sh)  # 添加handler
+
+
+    def getlog(self):
+        return self.logger

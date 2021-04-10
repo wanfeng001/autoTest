@@ -26,8 +26,4 @@ class ReadJson:
             return jsonData
 
 
-if __name__ == '__main__':
-    j = ReadJson()
-    rtoken = j.getToken()
-    print(rtoken['test2'])
 

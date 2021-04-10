@@ -1,11 +1,10 @@
 import unittest
 
 from tools.setEmail import SendEmail
-from tools.setLog import init_logging
+from tools.setLog import Logger
 from tools import HTMLTestRunner
-import logging
 from common import configpath
-logger = init_logging()
+logger = Logger().getlog()
 class RunCase(unittest.TestCase):
     file_path = configpath.report_path
     case_path = configpath.case_path

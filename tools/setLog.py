@@ -14,10 +14,10 @@ print(BASE_DIR)
 '''
 
 
-def init_logging():
+def init_logging(logLevel=logging.INFO):
     logger = logging.getLogger()
     # 设置日志级别
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logLevel)
     # 设置日志的格式
     fmt = ('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s')
     formatter = logging.Formatter(fmt)

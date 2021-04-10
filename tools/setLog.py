@@ -1,12 +1,8 @@
 # coding:utf-8
 # 配置日志
 import logging
-import time
-from logging import handlers
 from common import configpath
 from common.getTime import GetTime
-
-
 
 '''
     Logger 记录器，暴露了应用程序代码能直接使用的接口。

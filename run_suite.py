@@ -1,19 +1,14 @@
 import unittest
 
-from script.ddtTest import Test_001
-from utils import SendEmail
-from setLog import init_logging
+from tools.setEmail import SendEmail
+from tools.setLog import init_logging
 from tools import HTMLTestRunner
 import logging
-import os
-import time
 from common import configpath
 logger = init_logging()
 class RunCase(unittest.TestCase):
     file_path = configpath.report_path
     case_path = configpath.case_path
-    logging.info(case_path)
-    logging.info(file_path)
     with open(file_path,mode='wb') as f:
         #suite = unittest.TestSuite()
         #suite.addTest(unittest.TestLoader().loadTestsFromTestCase(Test_001))
@@ -23,7 +18,3 @@ class RunCase(unittest.TestCase):
     SendEmail().send_email(file_path)
 if __name__ == '__main__':
     unittest.main()
-
-
-
-

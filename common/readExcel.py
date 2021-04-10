@@ -65,10 +65,5 @@ def get_data():
     return case
 
 
-# class Test:
-#     @pytest.mark.parametrize('account,password',get_data())
-#     def test_login(self,account,password):
-#         print('登录的账号为{}，密码为{}'.format(account,password))
-
 if __name__ == '__main__':
     print(get_data())

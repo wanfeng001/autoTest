@@ -1,5 +1,5 @@
 # pip install PyMySQL
-from setLog import init_logging
+from tools.setLog import init_logging
 import logging
 
 init_logging()

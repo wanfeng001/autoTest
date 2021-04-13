@@ -1,0 +1,6 @@
+2021-04-13 17:52:02,646 - test_login.py[line:69] - INFO - 
+2021-04-13 17:52:03,654 - test_login.py[line:74] - INFO - 没有登录进去
+assert 'QQ邮箱' == '登录QQ邮箱'
+  - 登录QQ邮箱
+  ? --
+  + QQ邮箱

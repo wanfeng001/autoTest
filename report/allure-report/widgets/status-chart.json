@@ -1,30 +1,20 @@
 [ {
-  "uid" : "339b580e15d5c4fc",
-  "name" : "#正确的账号、密码、验证码",
+  "uid" : "c4603917f98c5990",
+  "name" : "正确的账号密码",
   "time" : {
-    "start" : 1618374202608,
-    "stop" : 1618374204708,
-    "duration" : 2100
+    "start" : 1618386620279,
+    "stop" : 1618386621669,
+    "duration" : 1390
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e7067c043f8c3aaa",
-  "name" : "#错误的账号、正确的密码、正确的验证码",
+  "uid" : "4c71d3f8601d59f2",
+  "name" : "错误的账号密码",
   "time" : {
-    "start" : 1618374247970,
-    "stop" : 1618374252439,
-    "duration" : 4469
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d94aa69177b19ce5",
-  "name" : "#正确的账号、错误的密码、正确的验证码",
-  "time" : {
-    "start" : 1618374224310,
-    "stop" : 1618374228851,
-    "duration" : 4541
+    "start" : 1618386640888,
+    "stop" : 1618386642345,
+    "duration" : 1457
   },
   "status" : "passed",
   "severity" : "normal"

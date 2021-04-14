@@ -1,18 +1,3 @@
-from time import sleep
-from appium import webdriver
-
-'''
-desired_caps ={
-'deviceName':'M2004J7AC',
-'platformName':'Android',
-'platformVersion':'10',
-'appPackage':'com.taobao.taobao',
-'appActivity':'com.taobao.tao.welcome.Welcome',
-'resetKeyboard':'true'
-}
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
-'''
-
 def swipeDown(driver,t=500,n=1):
     l = driver.get_window_size()
     x1= l['width']* 0.5

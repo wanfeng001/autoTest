@@ -1,9 +1,7 @@
 import time
 from tools.setLog import Logger
-from common.operateExcel import OperateExcel
 import pytest
 import allure
-from selenium.webdriver.common.by import By
 from page.loginPage import *
 # 初始化日志
 logger = Logger().getlog()
@@ -42,7 +40,7 @@ class Test_login():
     else:
         logger.info('此用例IsExecute:{},不执行！'.format(isCase1Execute))
 
-    if isCase1Execute:
+    if isCase2Execute:
         @allure.story('用例2：{}'.format(case2))
         @allure.title('#{}'.format(case2))
         # @pytest.mark.skip
@@ -68,9 +66,9 @@ class Test_login():
                 OperateExcel().write_result(sheet_name='登录模块用例', id='DL-DLYM-002', value='fail')
                 logger.info(e)
     else:
-        logger.info('此用例IsExecute:{},不执行！'.format(isCase1Execute))
+        logger.info('此用例IsExecute:{},不执行！'.format(isCase2Execute))
 
-    if isCase1Execute:
+    if isCase3Execute:
         @allure.story('用例3：{}'.format(case3))
         @allure.title('#{}'.format(case3))
         # @pytest.mark.skip
@@ -96,9 +94,9 @@ class Test_login():
                 OperateExcel().write_result(sheet_name='登录模块用例', id='DL-DLYM-003', value='fail')
                 logger.info(e)
     else:
-        logger.info('此用例IsExecute:{},不执行！'.format(isCase1Execute))
+        logger.info('此用例IsExecute:{},不执行！'.format(isCase3Execute))
 
-    if isCase1Execute:
+    if isCase4Execute:
         @allure.story('用例4：{}'.format(case4))
         @allure.title('#{}'.format(case4))
         # @pytest.mark.skip
@@ -123,9 +121,9 @@ class Test_login():
                 OperateExcel().write_result(sheet_name='登录模块用例', id='DL-DLYM-004', value='fail')
                 logger.info(e)
     else:
-        logger.info('此用例IsExecute:{},不执行！'.format(isCase1Execute))
+        logger.info('此用例IsExecute:{},不执行！'.format(isCase4Execute))
 
-    if isCase1Execute:
+    if isCase5Execute:
         @allure.story('用例5：{}'.format(case5))
         @allure.title('#{}'.format(case5))
         # @pytest.mark.skip
@@ -150,7 +148,7 @@ class Test_login():
                 OperateExcel().write_result(sheet_name='登录模块用例', id='DL-DLYM-005', value='fail')
                 logger.info(e)
     else:
-        logger.info('此用例IsExecute:{},不执行！'.format(isCase1Execute))
+        logger.info('此用例IsExecute:{},不执行！'.format(isCase5Execute))
 
 
 if __name__ == '__main__':

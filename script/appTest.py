@@ -131,6 +131,7 @@ ele = 'new UiSelector().resourceId()'
 ele = 'new UiSelector().description("content-desc")'
 driver.find_elements_by_android_uiautomator()
 '''
+
 '''
 # Id + text定位
 ele = 'resourceId().text()' 

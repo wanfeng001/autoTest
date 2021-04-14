@@ -5,65 +5,39 @@
     "name" : "script.test_login",
     "children" : [ {
       "name" : "#正确的账号、密码、验证码",
-      "uid" : "73d5b68da00ffcf9",
+      "uid" : "339b580e15d5c4fc",
       "parentUid" : "09fd0b55a13961e1d704cb24ddc764d8",
       "status" : "passed",
       "time" : {
-        "start" : 1618313702259,
-        "stop" : 1618313704360,
-        "duration" : 2101
+        "start" : 1618374202608,
+        "stop" : 1618374204708,
+        "duration" : 2100
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "#正确的账号、错误的密码、正确的验证码",
-      "uid" : "420d1107438b3dbb",
+      "uid" : "d94aa69177b19ce5",
       "parentUid" : "09fd0b55a13961e1d704cb24ddc764d8",
       "status" : "passed",
       "time" : {
-        "start" : 1618313711348,
-        "stop" : 1618313715821,
-        "duration" : 4473
+        "start" : 1618374224310,
+        "stop" : 1618374228851,
+        "duration" : 4541
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "#错误的账号、正确的密码、正确的验证码",
-      "uid" : "e335e416c0c7d14b",
+      "uid" : "e7067c043f8c3aaa",
       "parentUid" : "09fd0b55a13961e1d704cb24ddc764d8",
       "status" : "passed",
       "time" : {
-        "start" : 1618313722721,
-        "stop" : 1618313727214,
-        "duration" : 4493
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "#账号为空、正确的密码、验证码",
-      "uid" : "87a52fa2042f2e7f",
-      "parentUid" : "09fd0b55a13961e1d704cb24ddc764d8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1618313734143,
-        "stop" : 1618313735567,
-        "duration" : 1424
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "#密码为空、正确的账号、验证码",
-      "uid" : "9600de697e4054ff",
-      "parentUid" : "09fd0b55a13961e1d704cb24ddc764d8",
-      "status" : "passed",
-      "time" : {
-        "start" : 1618313755957,
-        "stop" : 1618313757366,
-        "duration" : 1409
+        "start" : 1618374247970,
+        "stop" : 1618374252439,
+        "duration" : 4469
       },
       "flaky" : false,
       "newFailed" : false,

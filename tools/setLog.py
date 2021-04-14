@@ -1,7 +1,7 @@
 # coding:utf-8
 # 配置日志
 import logging
-from common import configpath
+from common import configPath
 from common.getTime import GetTime
 
 '''
@@ -13,12 +13,12 @@ from common.getTime import GetTime
 
 class Logger:
     def __init__(self, CmdLevel=logging.INFO, FileLevel=logging.INFO):
-        BASE_DIR = configpath.ROOT_DIR
+        BASE_DIR = configPath.ROOT_DIR
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)  # 设置日志默认级别为DEBUG
         fmt = logging.Formatter('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s')  # 设置日志输出格式
         currTime = GetTime.get_current_time()  # 格式化当前时间
-        log_path = BASE_DIR + "\\logs"  # 设置日志文件保存路径
+        log_path = BASE_DIR + "\\logs\\"  # 设置日志文件保存路径
 
         print('得到的日志路径为：', log_path)
         log_name = log_path + currTime + '.log'  # 设置日志文件名称

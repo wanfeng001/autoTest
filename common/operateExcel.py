@@ -8,6 +8,18 @@ from openpyxl import load_workbook
 from openpyxl.styles import Font, colors
 from common import configPath
 
+class Variable():
+    # excel中每列数据对应的索引
+    id = 1
+    testCase = 3
+    priority = 4
+    Account = 5
+    Password = 6
+    Expect = 7
+    isExecute = 8
+    TestResult = 9
+
+    # test_result = 2
 
 # 操作Excel数据
 class OperateExcel:
@@ -15,7 +27,7 @@ class OperateExcel:
         self.file_path = configPath.excel_path
         self.wb = load_workbook(self.file_path)
 
-    # 获取某一列数据(不包括标题)
+    # 获取一列数据
     def get_column_value(self, sheet_name, col_num):
         sh = self.wb[sheet_name]
         case = []
@@ -24,9 +36,9 @@ class OperateExcel:
             case.append(value)
         return case
 
-    # 获取对应id行的序列
+    # 获取id的序列(从而确定这一行数据)
     def get_rowId_index(self, sheet_name, id):
-        idx = configPath.id
+        idx = Variable.id
         allIdList = self.get_column_value(sheet_name, col_num=idx)
         if id not in allIdList:
             raise TypeError('编号：{},不存在!'.format(id))
@@ -34,7 +46,7 @@ class OperateExcel:
             idIndex = allIdList.index(id)
             return idIndex
 
-    # 获取某一行数据
+    # 获取一行数据
     def get_row_value(self, sheet_name, row_num):
         sh = self.wb[sheet_name]
         case = []
@@ -49,6 +61,37 @@ class OperateExcel:
         value = sh.cell(row_num, col_num).value
         return value
 
+    # 获取是否执行用例字段
+    def get_is_execute(self,sheet_name,id):
+        sh = self.wb[sheet_name]
+        isExecute = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.isExecute).value
+        if isExecute.lower() == "no":
+            flag = False
+        elif isExecute.lower() == "yes":
+            flag = True
+        else:
+            raise TypeError("用户编号为：{} 的 ‘ IsExecute ’ 字段有误！允许类型：yes、no ".format(id))
+        return flag
+
+    # 获取测试用例字段
+    def get_test_case(self,sheet_name,id):
+        sh = self.wb[sheet_name]
+        testCase = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.testCase).value
+        return testCase
+
+    # 获取账号密码字段
+    def get_account_data(self,sheet_name,id):
+        sh = self.wb[sheet_name]
+        data = []
+        account = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.Account).value
+        data.append(account)
+        password = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.Password).value
+        data.append(password)
+        for i in range(len(data)):
+            if data[i] is None:
+                data[i] = ''
+            return data
+
     # 写入单元格数据
     def write_result(self, sheet_name, id, value):
         """
@@ -62,7 +105,7 @@ class OperateExcel:
         curTime = datetime.datetime.now().strftime('%Y%m%d %H:%M:%S')
         # 横,纵坐标
         y = self.get_rowId_index(sheet_name, id) + 1
-        x = configPath.test_result
+        x = Variable.TestResult
         # 写入
         sh.cell(y, x).value = curTime + "->" + value
         # 设置字体样式
@@ -79,41 +122,11 @@ class OperateExcel:
         self.wb.save(self.file_path)
 
 
-# 获取执行为Y的数据
-def get_data():
-    read_excel = OperateExcel()
-    case = []
-    for idx, value in enumerate(read_excel.get_column_value(sheet_name='登录模块用例', col_num=configPath.isExecute)):
-        if value == 'Y':
-            data = read_excel.get_row_value(sheet_name='登录模块用例', row_num=idx + 2)
-            # 继续添加想要的数据
-            username = data[configPath.Account - 2]
-            password = data[configPath.Password - 2]
-            info = [username, password]
-            for i in range(len(info)):
-                if info[i] == None:
-                    info[i] = ''
-            case.append(info)
-    return case
-
-
 if __name__ == '__main__':
     r = OperateExcel()
-    r.write_result(sheet_name='Sheet2',id=1,value='pass')
-    r.write_result(sheet_name='Sheet2',id=2,value='fail')
-    r.write_result(sheet_name='Sheet2',id=3,value='pass')
-    r.write_result(sheet_name='Sheet2',id=4,value='fail')
-    r.write_result(sheet_name='Sheet2',id=5,value='pass')
-    r.write_result(sheet_name='Sheet2',id=6,value='fail')
-    r.write_result(sheet_name='Sheet2',id=7,value='pass')
-    r.write_result(sheet_name='Sheet2',id=8,value='fail')
-    r.write_result(sheet_name='Sheet2',id=9,value='pass')
-    r.write_result(sheet_name='Sheet2',id=10,value='fail')
-    r.write_result(sheet_name='Sheet2',id=11,value='pass')
-    r.write_result(sheet_name='Sheet2',id=12,value='fail')
-    r.write_result(sheet_name='Sheet2',id=13,value='pass')
-    r.write_result(sheet_name='Sheet2',id=14,value='fail')
-    r.write_result(sheet_name='Sheet2',id=15,value='pass')
-    r.write_result(sheet_name='Sheet2',id=16,value='fail')
+    # r.write_result(sheet_name='Sheet2',id=1,value='pass')
+    # r.write_result(sheet_name='Sheet2',id=2,value='fail')
+    print(r.get_account_data(sheet_name='登录模块用例',id='DL-DLYM-004'))
+
 
 

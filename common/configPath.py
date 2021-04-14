@@ -11,14 +11,3 @@ yaml_path = os.path.join(ROOT_DIR, 'data\yamldata.yaml')
 picture_path = os.path.join(ROOT_DIR, 'screenshot\\1-{}.png'.format(strftime('%Y%m%d%H%M%S')))
 case_path = os.path.join(ROOT_DIR, 'script')
 report_path = os.path.join(ROOT_DIR, 'report\\test_report-{}.html'.format(strftime('%Y%m%d%H%M%S')))
-
-''' EXCEL 列名对应位置 '''
-id = 1
-testCase = 3
-priority = 4
-Account = 5
-Password = 6
-Expect = 7
-isExecute = 8
-
-test_result = 2

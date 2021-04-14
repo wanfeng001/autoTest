@@ -1,5 +1,6 @@
 # autoTest
-自动化框架Demo
+自动化框架Demo 
+安装环境依赖 pip install -r requirements.txt
 ### pytest 插件安装
     pip install pytest-xdist 多线程
     
@@ -35,8 +36,9 @@
 
  - pycharm安装插件 pip install allure-pytest
  - allure插件安装包需配置环境变量 allure-2.13.8/bin
- - .生成xml格式报告并指定目录 pytest -ff test_pytest.py --alluredir ./allure-results --clean-alluredir
+ - 管理员身份运行pycharm
+ - 生成xml格式报告并指定目录 pytest -ff test_pytest.py --alluredir ./allure-results --clean-alluredir
  - 将xml格式报告转换为html报告 allure generate allure-results -o allure_report/html --clean
-  
+ 
  - --allure-serverities blocker 指定标记级别为“阻塞”的用例
-      --allure-feature = '登录模块' 指定标记模块为“登录模块”的用例
+   --allure-feature = '登录模块' 指定标记模块为“登录模块”的用例

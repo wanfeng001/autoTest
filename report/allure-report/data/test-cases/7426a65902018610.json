@@ -1,148 +1,145 @@
 {
-  "uid" : "f17929809819452",
-  "name" : "#正确的账号、密码、验证码",
-  "fullName" : "script.test_login.Test_login#test_correct_login",
-  "historyId" : "161712d7f91a286be1b8dcce702f9744",
+  "uid" : "7426a65902018610",
+  "name" : "#正确的账号、错误的密码、正确的验证码",
+  "fullName" : "script.test_login.Test_login#test_error_account",
+  "historyId" : "883a541f97fe6c8c9ddfd4c2f0cae9b6",
   "time" : {
-    "start" : 1618477831393,
-    "stop" : 1618477831837,
-    "duration" : 444
+    "start" : 1618480356474,
+    "stop" : 1618480360005,
+    "duration" : 3531
   },
-  "description" : "正确账号、密码",
-  "descriptionHtml" : "<p>正确账号、密码</p>\n",
+  "description" : "错误的账号",
+  "descriptionHtml" : "<p>错误的账号</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1618477814279,
-      "stop" : 1618477831393,
-      "duration" : 17114
+      "start" : 1618480351316,
+      "stop" : 1618480356474,
+      "duration" : 5158
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
+    "hasContent" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "testStage" : {
-    "description" : "正确账号、密码",
+    "description" : "错误的账号",
     "status" : "passed",
     "steps" : [ {
       "name" : "输入账号",
       "time" : {
-        "start" : 1618477831443,
-        "stop" : 1618477831539,
-        "duration" : 96
+        "start" : 1618480356534,
+        "stop" : 1618480356632,
+        "duration" : 98
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
+      "hasContent" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "输入密码",
       "time" : {
-        "start" : 1618477831539,
-        "stop" : 1618477831636,
+        "start" : 1618480356633,
+        "stop" : 1618480356730,
         "duration" : 97
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
+      "hasContent" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "点击登录按钮",
       "time" : {
-        "start" : 1618477831636,
-        "stop" : 1618477831747,
-        "duration" : 111
+        "start" : 1618480356730,
+        "stop" : 1618480359845,
+        "duration" : 3115
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
+      "hasContent" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     }, {
       "name" : "校验结果",
       "time" : {
-        "start" : 1618477831747,
-        "stop" : 1618477831837,
-        "duration" : 90
+        "start" : 1618480359845,
+        "stop" : 1618480360005,
+        "duration" : 160
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
+      "hasContent" : false,
       "stepsCount" : 0,
-      "hasContent" : false
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
     } ],
     "attachments" : [ {
-      "uid" : "29a7ed4abc8d523b",
+      "uid" : "2fc4d57455d8e437",
       "name" : "log",
-      "source" : "29a7ed4abc8d523b.txt",
+      "source" : "2fc4d57455d8e437.txt",
       "type" : "text/plain",
-      "size" : 8125
+      "size" : 9165
     }, {
-      "uid" : "e4419973f3e2cf6a",
+      "uid" : "c96904b8167b5ed3",
       "name" : "stdout",
-      "source" : "e4419973f3e2cf6a.txt",
+      "source" : "c96904b8167b5ed3.txt",
       "type" : "text/plain",
       "size" : 26
     }, {
-      "uid" : "2c1dc4c13dece3c5",
+      "uid" : "5ca741f7289fa8eb",
       "name" : "stderr",
-      "source" : "2c1dc4c13dece3c5.txt",
+      "source" : "5ca741f7289fa8eb.txt",
       "type" : "text/plain",
-      "size" : 202
+      "size" : 198
     } ],
     "parameters" : [ ],
-    "attachmentsCount" : 3,
-    "shouldDisplayMessage" : false,
+    "hasContent" : true,
     "stepsCount" : 4,
-    "hasContent" : true
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 3
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1618477831838,
-      "stop" : 1618477833925,
-      "duration" : 2087
+      "start" : 1618480360005,
+      "stop" : 1618480362085,
+      "duration" : 2080
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
+    "hasContent" : false,
     "stepsCount" : 0,
-    "hasContent" : false
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
   } ],
   "labels" : [ {
-    "name" : "severity",
-    "value" : "normal"
-  }, {
-    "name" : "story",
-    "value" : "用例1：正确的账号、密码、验证码"
-  }, {
     "name" : "feature",
     "value" : "登录功能"
+  }, {
+    "name" : "story",
+    "value" : "用例2：正确的账号、错误的密码、正确的验证码"
   }, {
     "name" : "parentSuite",
     "value" : "script"
@@ -157,7 +154,7 @@
     "value" : "DESKTOP-BN9QCCJ"
   }, {
     "name" : "thread",
-    "value" : "15900-MainThread"
+    "value" : "10444-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -185,6 +182,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f17929809819452.json",
+  "source" : "7426a65902018610.json",
   "parameterValues" : [ ]
 }

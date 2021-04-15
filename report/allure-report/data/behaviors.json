@@ -4,39 +4,39 @@
   "children" : [ {
     "name" : "登录功能",
     "children" : [ {
-      "name" : "用例1：正确的账号、密码、验证码",
-      "children" : [ {
-        "name" : "#正确的账号、密码、验证码",
-        "uid" : "f17929809819452",
-        "parentUid" : "3da49e793955a70b05cbc22c856cfe2a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1618477831393,
-          "stop" : 1618477831837,
-          "duration" : 444
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "3da49e793955a70b05cbc22c856cfe2a"
-    }, {
       "name" : "用例2：正确的账号、错误的密码、正确的验证码",
       "children" : [ {
         "name" : "#正确的账号、错误的密码、正确的验证码",
-        "uid" : "1e70ad50fe8fe931",
+        "uid" : "7426a65902018610",
         "parentUid" : "a13d6e96573b0c4764fd64f86da4af34",
         "status" : "passed",
         "time" : {
-          "start" : 1618477851065,
-          "stop" : 1618477854552,
-          "duration" : 3487
+          "start" : 1618480356474,
+          "stop" : 1618480360005,
+          "duration" : 3531
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "a13d6e96573b0c4764fd64f86da4af34"
+    }, {
+      "name" : "用例1：正确的账号、密码、验证码",
+      "children" : [ {
+        "name" : "#正确的账号、密码、验证码",
+        "uid" : "8a5dcc3303c7e4b8",
+        "parentUid" : "3da49e793955a70b05cbc22c856cfe2a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618480368784,
+          "stop" : 1618480369287,
+          "duration" : 503
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3da49e793955a70b05cbc22c856cfe2a"
     } ],
     "uid" : "76c1a89e029bf2806c0ddb06b8505b0b"
   } ]

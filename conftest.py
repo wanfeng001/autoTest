@@ -3,7 +3,9 @@ import pytest
 from selenium import webdriver
 from py._xmlgen import html
 import allure
-from common import configPath
+from config import configPath
+
+
 @pytest.fixture(scope='function',autouse=True)
 def browser():
     # 静默执行

@@ -1,12 +1,9 @@
 import datetime
-import os
-import time
-from datetime import date
 
-import pytest
 from openpyxl import load_workbook
 from openpyxl.styles import Font, colors
-from common import configPath
+from config import configPath
+
 
 class Variable():
     # excel中每列数据对应的索引
@@ -122,11 +119,6 @@ class OperateExcel:
         self.wb.save(self.file_path)
 
 
-if __name__ == '__main__':
-    r = OperateExcel()
-    # r.write_result(sheet_name='Sheet2',id=1,value='pass')
-    # r.write_result(sheet_name='Sheet2',id=2,value='fail')
-    print(r.get_account_data(sheet_name='登录模块用例',id='DL-DLYM-004'))
 
 
 

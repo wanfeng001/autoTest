@@ -1,7 +1,7 @@
 # coding:utf-8
 # 配置日志
 import logging
-from common import configPath
+from config import configPath
 from common.getTime import GetTime
 
 '''

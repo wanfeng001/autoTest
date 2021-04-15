@@ -1,5 +1,0 @@
-2021-04-14 12:02:52,461 - test_login.py[line:40] - INFO - [Errno 13] Permission denied: 'C:\\Users\\1111111\\PycharmProjects\\autoTest\\data\\Mes快速建模测试用例.xlsx'
-2021-04-14 12:03:03,780 - test_login.py[line:63] - INFO - 请输入正确的帐号！
-2021-04-14 12:03:27,712 - test_login.py[line:91] - INFO - 你还没有输入帐号！
-2021-04-14 12:03:48,613 - test_login.py[line:118] - INFO - 你还没有输入帐号！
-2021-04-14 12:04:09,936 - test_login.py[line:145] - INFO - 你还没有输入帐号！

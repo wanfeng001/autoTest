@@ -7,6 +7,8 @@
 import os
 import pytest
 
+# pytest程序调用
 pytest.main(['--alluredir=report/allure-raw','--clean-alluredir'])
-adb ='allure generate report/allure-raw -o report/allure-report --clean'
-os.system(adb)
+# 执行CMD命令
+cmd ='allure generate report/allure-raw -o report/allure-report --clean'
+os.system(cmd)

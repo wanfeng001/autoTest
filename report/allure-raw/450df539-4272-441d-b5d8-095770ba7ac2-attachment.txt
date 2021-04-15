@@ -1,0 +1,2 @@
+得到的日志路径为： C:\Users\1111111\PycharmProjects\autoTest\logs\
+保存数据,执行成功

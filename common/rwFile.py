@@ -1,8 +1,7 @@
 import json
-import os
 import configparser
 import yaml
-from common import configPath
+from config import configPath
 
 
 class ReadConfig:

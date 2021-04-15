@@ -1,4 +1,0 @@
-2021-04-15 08:45:49,999 - assertMode.py[line:26] - INFO - 预期数值为登录QQ邮箱,实际数值为QQ邮箱
-2021-04-15 08:45:49,999 - assertMode.py[line:26] - INFO - 预期数值为登录QQ邮箱,实际数值为QQ邮箱
-2021-04-15 08:45:50,000 - assertMode.py[line:32] - INFO - 预期结果不一致 -> 失败
-2021-04-15 08:45:50,000 - assertMode.py[line:32] - INFO - 预期结果不一致 -> 失败

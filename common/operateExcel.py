@@ -40,7 +40,7 @@ class OperateExcel:
         if id not in allIdList:
             raise TypeError('编号：{},不存在!'.format(id))
         else:
-            idIndex = allIdList.index(id)
+            idIndex = allIdList.index(id) + 1
             return idIndex
 
     # 获取一行数据
@@ -61,7 +61,7 @@ class OperateExcel:
     # 获取是否执行用例字段
     def get_is_execute(self,sheet_name,id):
         sh = self.wb[sheet_name]
-        isExecute = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.isExecute).value
+        isExecute = sh.cell(self.get_rowId_index(sheet_name,id),Variable.isExecute).value
         if isExecute.lower() == "no":
             flag = False
         elif isExecute.lower() == "yes":
@@ -73,16 +73,16 @@ class OperateExcel:
     # 获取测试用例字段
     def get_test_case(self,sheet_name,id):
         sh = self.wb[sheet_name]
-        testCase = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.testCase).value
+        testCase = sh.cell(self.get_rowId_index(sheet_name,id),Variable.testCase).value
         return testCase
 
     # 获取账号密码字段
     def get_account_data(self,sheet_name,id):
         sh = self.wb[sheet_name]
         data = []
-        account = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.Account).value
+        account = sh.cell(self.get_rowId_index(sheet_name,id),Variable.Account).value
         data.append(account)
-        password = sh.cell(self.get_rowId_index(sheet_name,id) + 1,Variable.Password).value
+        password = sh.cell(self.get_rowId_index(sheet_name,id),Variable.Password).value
         data.append(password)
         for i in range(len(data)):
             if data[i] is None:
@@ -101,7 +101,7 @@ class OperateExcel:
         # 设置时间格式
         curTime = datetime.datetime.now().strftime('%Y%m%d %H:%M:%S')
         # 横,纵坐标
-        y = self.get_rowId_index(sheet_name, id) + 1
+        y = self.get_rowId_index(sheet_name, id)
         x = Variable.TestResult
         # 写入
         sh.cell(y, x).value = curTime + "->" + value
@@ -117,8 +117,6 @@ class OperateExcel:
         # 保存
         print('保存数据,执行成功')
         self.wb.save(self.file_path)
-
-
 
 
 

@@ -1,10 +1,20 @@
 [ {
-  "uid" : "619df22f51f97aab",
+  "uid" : "1e70ad50fe8fe931",
+  "name" : "#正确的账号、错误的密码、正确的验证码",
+  "time" : {
+    "start" : 1618477851065,
+    "stop" : 1618477854552,
+    "duration" : 3487
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f17929809819452",
   "name" : "#正确的账号、密码、验证码",
   "time" : {
-    "start" : 1618447549562,
-    "stop" : 1618447550049,
-    "duration" : 487
+    "start" : 1618477831393,
+    "stop" : 1618477831837,
+    "duration" : 444
   },
   "status" : "passed",
   "severity" : "normal"

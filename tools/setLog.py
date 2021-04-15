@@ -14,7 +14,8 @@ from common.getTime import GetTime
 class Logger:
     def __init__(self, CmdLevel=logging.INFO, FileLevel=logging.INFO):
         BASE_DIR = configPath.ROOT_DIR
-        self.logger = logging.getLogger()
+        self.logger = logging.getLogger() # 实例化日志类
+        self.logger.handlers.clear() # 每次使用都需要清除之前的handle否则会打印重复
         self.logger.setLevel(logging.DEBUG)  # 设置日志默认级别为DEBUG
         fmt = logging.Formatter('%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s - %(message)s')  # 设置日志输出格式
         currTime = GetTime.get_current_time()  # 格式化当前时间

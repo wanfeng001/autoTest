@@ -1,17 +1,17 @@
 # pip install PyMySQL
 from tools.setLog import Logger
 import pymysql
-from common.readConfig import Readconfig
+from common.rwFile import ReadConfig
 
 logger = Logger().getlog()
 class ReadMysql:
     def __init__(self):
         self.db = pymysql.connect(
-            host=Readconfig.my_ini('db_host'),
-            port=int(Readconfig.my_ini('db_port')),
-            user=Readconfig.my_ini('db_user'),
-            password=Readconfig.my_ini('db_password'),
-            db=Readconfig.my_ini('db_lib')
+            host=ReadConfig.my_ini('db_host'),
+            port=int(ReadConfig.my_ini('db_port')),
+            user=ReadConfig.my_ini('db_user'),
+            password=ReadConfig.my_ini('db_password'),
+            db=ReadConfig.my_ini('db_lib')
         )
 
         self.cur = self.db.cursor(cursor=pymysql.cursors.DictCursor)

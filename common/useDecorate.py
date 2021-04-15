@@ -7,7 +7,7 @@
 from functools import wraps
 from tools.setLog import Logger
 
-log =Logger().getlog()
+log = Logger().getlog()
 # 带参数装饰器设置,装饰器名字：isExecute
 def isExecute(arg):
     """

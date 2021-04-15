@@ -1,24 +1,24 @@
 {
-  "uid" : "619df22f51f97aab",
-  "name" : "#正确的账号、密码、验证码",
-  "fullName" : "script.test_login.Test_login#test_correct_login",
-  "historyId" : "161712d7f91a286be1b8dcce702f9744",
+  "uid" : "1e70ad50fe8fe931",
+  "name" : "#正确的账号、错误的密码、正确的验证码",
+  "fullName" : "script.test_login.Test_login#test_error_account",
+  "historyId" : "883a541f97fe6c8c9ddfd4c2f0cae9b6",
   "time" : {
-    "start" : 1618447549562,
-    "stop" : 1618447550049,
-    "duration" : 487
+    "start" : 1618477851065,
+    "stop" : 1618477854552,
+    "duration" : 3487
   },
-  "description" : "正确账号、密码",
-  "descriptionHtml" : "<p>正确账号、密码</p>\n",
+  "description" : "错误的账号",
+  "descriptionHtml" : "<p>错误的账号</p>\n",
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1618447532383,
-      "stop" : 1618447549562,
-      "duration" : 17179
+      "start" : 1618477833935,
+      "stop" : 1618477851065,
+      "duration" : 17130
     },
     "status" : "passed",
     "steps" : [ ],
@@ -30,14 +30,14 @@
     "hasContent" : false
   } ],
   "testStage" : {
-    "description" : "正确账号、密码",
+    "description" : "错误的账号",
     "status" : "passed",
     "steps" : [ {
       "name" : "输入账号",
       "time" : {
-        "start" : 1618447549622,
-        "stop" : 1618447549727,
-        "duration" : 105
+        "start" : 1618477851115,
+        "stop" : 1618477851215,
+        "duration" : 100
       },
       "status" : "passed",
       "steps" : [ ],
@@ -50,9 +50,9 @@
     }, {
       "name" : "输入密码",
       "time" : {
-        "start" : 1618447549727,
-        "stop" : 1618447549835,
-        "duration" : 108
+        "start" : 1618477851215,
+        "stop" : 1618477851313,
+        "duration" : 98
       },
       "status" : "passed",
       "steps" : [ ],
@@ -65,9 +65,9 @@
     }, {
       "name" : "点击登录按钮",
       "time" : {
-        "start" : 1618447549835,
-        "stop" : 1618447549952,
-        "duration" : 117
+        "start" : 1618477851313,
+        "stop" : 1618477854432,
+        "duration" : 3119
       },
       "status" : "passed",
       "steps" : [ ],
@@ -80,9 +80,9 @@
     }, {
       "name" : "校验结果",
       "time" : {
-        "start" : 1618447549952,
-        "stop" : 1618447550048,
-        "duration" : 96
+        "start" : 1618477854432,
+        "stop" : 1618477854552,
+        "duration" : 120
       },
       "status" : "passed",
       "steps" : [ ],
@@ -94,23 +94,23 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "891fbb129141b42f",
+      "uid" : "9a50b623d319b385",
       "name" : "log",
-      "source" : "891fbb129141b42f.txt",
+      "source" : "9a50b623d319b385.txt",
       "type" : "text/plain",
-      "size" : 8125
+      "size" : 8679
     }, {
-      "uid" : "66933f113c14bb47",
+      "uid" : "79e3afa8d647cac",
       "name" : "stdout",
-      "source" : "66933f113c14bb47.txt",
+      "source" : "79e3afa8d647cac.txt",
       "type" : "text/plain",
-      "size" : 102
+      "size" : 26
     }, {
-      "uid" : "5533a5c79e20c2c",
+      "uid" : "e86ffb83f6d06745",
       "name" : "stderr",
-      "source" : "5533a5c79e20c2c.txt",
+      "source" : "e86ffb83f6d06745.txt",
       "type" : "text/plain",
-      "size" : 404
+      "size" : 198
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 3,
@@ -121,9 +121,9 @@
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1618447550049,
-      "stop" : 1618447552151,
-      "duration" : 2102
+      "start" : 1618477854552,
+      "stop" : 1618477856672,
+      "duration" : 2120
     },
     "status" : "passed",
     "steps" : [ ],
@@ -135,14 +135,11 @@
     "hasContent" : false
   } ],
   "labels" : [ {
+    "name" : "story",
+    "value" : "用例2：正确的账号、错误的密码、正确的验证码"
+  }, {
     "name" : "feature",
     "value" : "登录功能"
-  }, {
-    "name" : "severity",
-    "value" : "normal"
-  }, {
-    "name" : "story",
-    "value" : "用例1：正确的账号、密码、验证码"
   }, {
     "name" : "parentSuite",
     "value" : "script"
@@ -157,7 +154,7 @@
     "value" : "DESKTOP-BN9QCCJ"
   }, {
     "name" : "thread",
-    "value" : "5772-MainThread"
+    "value" : "15900-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -185,6 +182,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "619df22f51f97aab.json",
+  "source" : "1e70ad50fe8fe931.json",
   "parameterValues" : [ ]
 }

@@ -4,7 +4,6 @@
 @Author  : wanfeng
 
 """
-#
 from functools import wraps
 # 带参数装饰器设置,装饰器名字：isExecute
 def isExecute(arg):

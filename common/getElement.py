@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from common.saveScreenshot import take_photo_as_file

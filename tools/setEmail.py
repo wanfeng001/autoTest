@@ -1,17 +1,22 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
+
 # 配置邮件
-from email.mime.text import MIMEText  # 只能发送正文
-from email.mime.multipart import  MIMEMultipart  # 可以发送附件和正文
-import smtplib # 邮件系统
-from common import readConfig
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import smtplib
+from common.rwFile import ReadConfig
 
 
 class SendEmail():
     def __init__(self):
-        self.host = readConfig.Readconfig.qq_ini('email_host')
-        self.sender = readConfig.Readconfig.qq_ini('email_sender')
-        self.recevier = readConfig.Readconfig.qq_ini('email_receiver')
-        self.pwd = readConfig.Readconfig.qq_ini('email_pwd')
+        self.host = ReadConfig.qq_ini('email_host')
+        self.sender = ReadConfig.qq_ini('email_sender')
+        self.recevier = ReadConfig.qq_ini('email_receiver')
+        self.pwd = ReadConfig.qq_ini('email_pwd')
 
     def send_email(self,report_file_path):
         # 邮箱配置信息

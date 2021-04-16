@@ -1,6 +1,9 @@
-import logging
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
 import unittest
-from time import sleep
 from ddt import ddt, unpack, file_data, data
 from config import configPath
 

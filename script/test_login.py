@@ -1,12 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
 import time
-from tools.setLog import Logger
 import pytest
 import allure
 from page.loginPage import *
 from common.assertMode import Assert
 from common.useDecorate import isExecute
-
-
 
 @allure.feature('登录功能')
 @allure.testcase('https://mail.qq.com/', 'qq邮箱')

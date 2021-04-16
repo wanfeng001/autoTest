@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
 def swipeDown(driver,t=500,n=1):
     l = driver.get_window_size()
     x1= l['width']* 0.5

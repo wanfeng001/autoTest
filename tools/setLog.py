@@ -1,4 +1,9 @@
-# coding:utf-8
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
+
 # 配置日志
 import logging
 from config import configPath

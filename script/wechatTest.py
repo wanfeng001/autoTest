@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+@Time    : 2021/4/16 14:11
+@Author  : wanfeng
+"""
 from time import sleep
 from appium import webdriver
 from common import swipeScreen

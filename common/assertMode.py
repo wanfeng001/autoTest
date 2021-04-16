@@ -2,9 +2,7 @@
 """
 @Time    : 2021/4/14 18:00
 @Author  : wanfeng
-
 """
-
 from common.operateExcel import OperateExcel
 from tools.setLog import Logger
 log = Logger().getlog()

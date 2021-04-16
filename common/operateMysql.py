@@ -20,7 +20,7 @@ class ReadMysql:
         try:
             self.cur.execute(sql)
             data = self.cur.fetchall()
-            logger.info(data)
+            logger.info(f'返回数据:{data}')
             return data
         except Exception as e:
             logger.warning(e)
@@ -35,5 +35,5 @@ class ReadMysql:
 
 if __name__ == '__main__':
     db = ReadMysql()
-    db.select_data('select id,stu_name,stu_gender,stu_score from student1')
+    db.select_data('select id,stu_name,stu_gender,stu_score from student')
     db.close_mysqldb()

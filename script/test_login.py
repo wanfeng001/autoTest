@@ -7,6 +7,7 @@ from common.assertMode import Assert
 from common.useDecorate import isExecute
 
 
+
 @allure.feature('登录功能')
 @allure.testcase('https://mail.qq.com/', 'qq邮箱')
 class Test_login():
@@ -36,7 +37,6 @@ class Test_login():
     @isExecute(arg=isCase2Execute)
     @allure.story('用例2：{}'.format(case2))
     @allure.title('#{}'.format(case2))
-    # @pytest.mark.skip
     def test_error_account(self, browser):
         '''错误的账号'''
         browser.switch_to.frame(id)
@@ -54,7 +54,7 @@ class Test_login():
             time.sleep(3)
         with allure.step("校验结果"):
             err = browser.find_element(error_msg[0], error_msg[1]).text
-            text = '请输入你的密码'
+            text = '账号或者密码错误'
             Assert().assertIn(err,text, 'DL-DLYM-002')
 
 if __name__ == '__main__':

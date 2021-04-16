@@ -1,21 +1,21 @@
 import logging
 import unittest
 from time import sleep
-from common import configpath
 from ddt import ddt, unpack, file_data, data
+from config import configPath
 
 
 @ddt
 class Test_001(unittest.TestCase):
 
     # 数据驱动 - 读取json文件
-    @file_data(configpath.json_path)
+    @file_data(configPath.json_path)
     @unpack
     def test_case01(self, username, password):
         print(username, password)
 
     # 数据驱动 - 读取yaml文件
-    # @file_data(configpath.yaml_path)
+    #@file_data(configPath.yaml_path)
     # @unpack
     # def test_case01(self,**kwargs):
     #     print(kwargs)

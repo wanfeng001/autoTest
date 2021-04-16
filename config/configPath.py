@@ -4,7 +4,7 @@ from time import strftime
 ''' 存放项目路径 '''
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_path = os.path.join(ROOT_DIR, 'logs')
-conf_path = os.path.join(ROOT_DIR, 'config\configPath.ini')
+conf_path = os.path.join(ROOT_DIR, 'config\configData.ini')
 excel_path = os.path.join(ROOT_DIR,'data\\Mes快速建模测试用例.xlsx')
 json_path = os.path.join(ROOT_DIR, 'data\jsondata.json')
 yaml_path = os.path.join(ROOT_DIR, 'data\yamldata.yaml')

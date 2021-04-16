@@ -7,10 +7,10 @@ from config import configPath
 
 
 @pytest.fixture(scope='function',autouse=True)
-def browser():
+def browser(headless=True):
     # 静默执行
     option = webdriver.ChromeOptions()
-    option.add_argument('headless')
+    option.add_argument('headless') if headless else None
     global _driver
     _driver = None
     if _driver is None:

@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@Time    : 2021/4/16 14:11
-@Author  : wanfeng
-"""
 import json
 import configparser
 import yaml
@@ -11,7 +6,7 @@ from config import configPath
 
 class ReadConfig:
     def __init__(self):
-        self.config_path = configPath.conf_path
+        self.config_path = configPath.configdata_path
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path, encoding='utf-8')
 

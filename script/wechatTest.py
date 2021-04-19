@@ -8,7 +8,8 @@ from appium import webdriver
 from common import swipeScreen
 from common.saveScreenshot import take_photo_as_file
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from common.getElement import get_element
 
 desired_caps ={
@@ -36,14 +37,23 @@ driver.find_elements_by_id('com.tencent.mm:id/cna')[0].click()
 print (driver.contexts)
 ac1 = driver.current_activity
 print(ac1)
-
-# ele = 'new UiSelector().className("android.widget.ImagView").index(1)'
-# driver.find_elements_by_android_uiautomator(ele)
-
 driver.wait_activity(ac1,1000)
 driver.tap([(1020,450)],400)
-print('成功点击了')
+print('成功点击')
 sleep(10)
 driver.close_app()
 driver.quit()
+
+# 封装toast是否存在
+# driver.press_keycode(4)
+# def is_toast_exist(driver,text,timeout=20,throttle=0.1):
+#     try:
+#         loc = ('xpath', './/*[contains(@text,{})]'.format(text))
+#         print(loc)
+#         WebDriverWait(driver,timeout,throttle).until(EC.presence_of_element_located(loc))
+#         return True
+#     except:
+#         return False
+# a = is_toast_exist(driver,"再按一次返回键就退出手机淘宝")
+# print (a)
 

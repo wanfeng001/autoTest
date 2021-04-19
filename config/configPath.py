@@ -24,3 +24,5 @@ picture_path = os.path.join(ROOT_DIR, 'screenshot','1-{}.png'.format(strftime('%
 script_path = os.path.join(ROOT_DIR, 'script')
 # 报告存放路径
 report_path = os.path.join(ROOT_DIR, 'report','test_report-{}.html'.format(strftime('%Y%m%d%H%M%S')))
+# 驱动存放位置
+chrome_path = os.path.join(ROOT_DIR,'config','driver','chromedriver.exe')

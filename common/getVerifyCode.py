@@ -14,6 +14,9 @@ import pytesseract
 from config.configPath import *
 import cv2 as cv
 
+from tools.setLog import Logger
+
+
 class VerifyCode:
     @classmethod
     def getCode(cls):
@@ -24,8 +27,12 @@ class VerifyCode:
             cls.driver.maximize_window()
             cls.driver.implicitly_wait(10)
             cls.driver.get("http://192.168.0.55:8888")
-            cls.driver.find_element_by_xpath('//div[@class="el-input el-input--small el-input--prefix"]/input').send_keys("admin")
-            cls.driver.find_element_by_xpath('//div[@class="el-input el-input--small el-input--prefix el-input--suffix"]/input').send_keys("admin")
+            account = cls.driver.find_element_by_xpath('//div[@class="el-input el-input--small el-input--prefix"]/input')
+            account.clear()
+            account.send_keys('admin')
+            password = cls.driver.find_element_by_xpath('//div[@class="el-input el-input--small el-input--prefix el-input--suffix"]/input')
+            password.clear()
+            password.send_keys('admin')
             cls.driver.save_screenshot(picture_path)
             imgElement = cls.driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[2]/div/form/div[3]/div/div/div[2]/div/img')    #定位验证码
             location = imgElement.location     #获取验证码X,Y的坐标
@@ -42,3 +49,5 @@ class VerifyCode:
             raise e
         finally:
             cls.driver.quit()
+
+VerifyCode.getCode()

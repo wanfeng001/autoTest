@@ -26,7 +26,7 @@ class Variable():
 # 操作Excel数据
 class OperateExcel:
     def __init__(self):
-        self.file_path = configPath.excel_path
+        self.file_path = configPath.EXCEL_PATH
         self.wb = load_workbook(self.file_path)
 
     # 获取一列数据

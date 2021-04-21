@@ -5,7 +5,7 @@
 """
 from config import configPath
 
-filename = configPath.picture_path
+filename = configPath.PICTURE_PATH
 
 def take_photo_as_file(driver):
     driver.save_screenshot(filename=filename)

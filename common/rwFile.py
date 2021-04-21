@@ -6,7 +6,7 @@ from config import configPath
 
 class ReadConfig:
     def __init__(self):
-        self.config_path = configPath.configdata_path
+        self.config_path = configPath.CONFIGDATA_PATH
         self.config = configparser.ConfigParser()
         self.config.read(self.config_path, encoding='utf-8')
 
@@ -25,7 +25,7 @@ class ReadConfig:
 
 class ReadYaml:
     def __init__(self):
-        self.file_data = configPath.yaml_path
+        self.file_data = configPath.YAML_PATH
 
     # 读取 yaml文件
     def readYaml(self):
@@ -56,7 +56,7 @@ class ReadYaml:
 
 class ReadJson:
     def __init__(self):
-        self.file_data = configPath.json_path
+        self.file_data = configPath.JSON_PATH
 
     # 读取json文件
     def readJson(self):

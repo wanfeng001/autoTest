@@ -39,7 +39,7 @@ class OperateExcel:
         return case
 
     # 获取id的序列(从而确定这一行数据)
-    def get_rowId_index(self, sheet_name, id):
+    def get_row_index(self, sheet_name, id):
         idx = Variable.id
         allIdList = self.get_column_value(sheet_name, col_num=idx)
         if id not in allIdList:
@@ -66,7 +66,7 @@ class OperateExcel:
     # 获取是否执行用例字段
     def get_is_execute(self,sheet_name,id):
         sh = self.wb[sheet_name]
-        isExecute = sh.cell(self.get_rowId_index(sheet_name,id),Variable.isExecute).value
+        isExecute = sh.cell(self.get_row_index(sheet_name, id), Variable.isExecute).value
         if isExecute.lower() == "no":
             flag = False
         elif isExecute.lower() == "yes":
@@ -78,16 +78,16 @@ class OperateExcel:
     # 获取测试用例字段
     def get_test_case(self,sheet_name,id):
         sh = self.wb[sheet_name]
-        testCase = sh.cell(self.get_rowId_index(sheet_name,id),Variable.testCase).value
+        testCase = sh.cell(self.get_row_index(sheet_name, id), Variable.testCase).value
         return testCase
 
     # 获取账号密码字段
     def get_account_data(self,sheet_name,id):
         sh = self.wb[sheet_name]
         data = []
-        account = sh.cell(self.get_rowId_index(sheet_name,id),Variable.Account).value
+        account = sh.cell(self.get_row_index(sheet_name, id), Variable.Account).value
         data.append(account)
-        password = sh.cell(self.get_rowId_index(sheet_name,id),Variable.Password).value
+        password = sh.cell(self.get_row_index(sheet_name, id), Variable.Password).value
         data.append(password)
         for i in range(len(data)):
             if data[i] is None:
@@ -106,7 +106,7 @@ class OperateExcel:
         # 设置时间格式
         curTime = datetime.datetime.now().strftime('%Y%m%d %H:%M:%S')
         # 横,纵坐标
-        y = self.get_rowId_index(sheet_name, id)
+        y = self.get_row_index(sheet_name, id)
         x = Variable.TestResult
         # 写入
         sh.cell(y, x).value = curTime + "->" + value

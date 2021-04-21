@@ -13,10 +13,10 @@ from common.rwFile import ReadConfig
 
 class SendEmail():
     def __init__(self):
-        self.host = ReadConfig.qq_ini('email_host')
-        self.sender = ReadConfig.qq_ini('email_sender')
-        self.recevier = ReadConfig.qq_ini('email_receiver')
-        self.pwd = ReadConfig.qq_ini('email_pwd')
+        self.host = ReadConfig.get_email('host')
+        self.sender = ReadConfig.get_email('sender')
+        self.recevier = ReadConfig.get_email('receiver')
+        self.pwd = ReadConfig.get_email('pwd')
 
     def send_email(self,report_file_path):
         # 邮箱配置信息

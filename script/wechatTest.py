@@ -35,6 +35,7 @@ locator = (By.ID,'com.tencent.mm:id/cna1111')
 get_element(driver,locator)
 driver.find_elements_by_id('com.tencent.mm:id/cna')[0].click()
 print (driver.contexts)
+driver.switch_to.context()
 ac1 = driver.current_activity
 print(ac1)
 driver.wait_activity(ac1,1000)

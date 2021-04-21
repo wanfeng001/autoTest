@@ -12,16 +12,16 @@ logger = Logger().getlog()
 class ReadMysql:
     def __init__(self):
         self.db = pymysql.connect(
-            host=ReadConfig.my_ini('db_host'),
-            port=int(ReadConfig.my_ini('db_port')),
-            user=ReadConfig.my_ini('db_user'),
-            password=ReadConfig.my_ini('db_password'),
-            db=ReadConfig.my_ini('db_lib')
+            host=ReadConfig.get_db('host'),
+            port=int(ReadConfig.get_db('port')),
+            user=ReadConfig.get_db('user'),
+            password=ReadConfig.get_db('password'),
+            db=ReadConfig.get_db('db')
         )
 
         self.cur = self.db.cursor(cursor=pymysql.cursors.DictCursor)
 
-    def select_data(self, sql):
+    def get_data(self, sql):
         try:
             self.cur.execute(sql)
             data = self.cur.fetchall()
@@ -31,14 +31,15 @@ class ReadMysql:
             logger.warning(e)
             raise e
 
-    def close_mysqldb(self):
+    def close_db(self):
         try:
             self.db.close()
         except Exception as e:
+            logger.warning(e)
             raise e
 
 
 if __name__ == '__main__':
     db = ReadMysql()
-    db.select_data('select id,stu_name,stu_gender,stu_score from student')
-    db.close_mysqldb()
+    db.get_data('select id,stu_name,stu_gender,stu_score from student')
+    db.close_db()

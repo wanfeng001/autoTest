@@ -12,14 +12,14 @@ class ReadConfig:
 
     # QQ邮箱配置
     @classmethod
-    def qq_ini(cls, value):
-        value = ReadConfig().config.get('email_qq', value)
+    def get_email(cls, value):
+        value = ReadConfig().config.get('email', value)
         return value
 
     # Mysql配置
     @classmethod
-    def my_ini(cls, value):
-        value = ReadConfig().config.get('mysql_db', value)
+    def get_db(cls, value):
+        value = ReadConfig().config.get('mysql', value)
         return value
 
 

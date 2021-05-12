@@ -5,16 +5,9 @@
 #      deviceName: A5RNW18316011440
 #      appPackage: com.tencent.mm
 #      appActivity: .ui.LauncherUI
-#      automationName: Uiautomator
 #      unicodeKeyboard: true
 #      resetKeyboard: true
 #      noReset: true
-#      chromeOptions:
-#      androidProcess: com.tencent.mm:tools
-#
-#- test2:
-#    desired_caps:
-#      platformName: ios
 
 test_login:
   - user: 376531877
@@ -22,10 +15,5 @@ test_login:
   - user1: 376531877
     password1: liuhaotao
   - user2: 376531877
-    password1: liuhaotao
+    password2: liuhaotao
 
-
-
-# ’---‘分隔符另外一个文件
-#---
-#- test3:

@@ -8,7 +8,7 @@ import pytest
 import allure
 from page.loginPage import *
 from common.assertMode import Assert
-from common.useDecorate import isExecute
+from common.myDecorate import isExecute
 
 @allure.feature('登录功能')
 @allure.testcase('https://mail.qq.com/', 'qq邮箱')

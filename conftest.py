@@ -10,7 +10,8 @@ from py._xmlgen import html
 import allure
 from config import configPath
 
-
+from config import configPath
+driver_path = configPath.CHROME_PATH
 @pytest.fixture(scope='function',autouse=True)
 def browser(headless=True):
     # 静默执行
@@ -19,7 +20,7 @@ def browser(headless=True):
     global _driver
     _driver = None
     if _driver is None:
-        _driver = webdriver.Chrome(chrome_options=option)
+        _driver = webdriver.Chrome(driver_path,chrome_options=option)
         _driver.implicitly_wait(10)
         _driver.get('https://mail.qq.com/')
         _driver.maximize_window()

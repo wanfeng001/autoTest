@@ -1,5 +1,5 @@
 
-## 自动化框架 Pytest + Selenium + allure
+## 框架 Pytest + Selenium + allure
 >   安装环境依赖 pip install -r requirements.txt
 
 
@@ -32,9 +32,9 @@
 
 ## pytest 参数
 
-多线程运行 例如3线程（需安装插件）
+多线程运行 
 
-    pytest test.py -n 3  
+    pytest test.py -n Num 
 
 打印print的内容
 
@@ -48,9 +48,9 @@
 
     pytest test.py --maxfail = Num
 
-失败用例重跑3次（需安装插件）
+失败用例重跑n次
 
-    pytest test.py --reruns 3 
+    pytest test.py --reruns Num
 
 运行上次失败的用例 
 

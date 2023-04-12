@@ -1,5 +1,6 @@
 
 ## 框架 Pytest + Selenium + allure
+
 安装环境依赖 pip install -r requirements.txt
 
 
@@ -8,6 +9,7 @@
 
 
 ## pytest 插件安装
+
 多线程运行
 
     pip install pytest-xdist

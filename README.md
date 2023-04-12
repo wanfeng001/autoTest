@@ -55,12 +55,12 @@
         --alluredir             指定目录位置
         --clean-alluredir       清空目录文件
  
-    5.将XML格式的内容转为HTML格式的内容 allure generate allure-results -o allure_report/html --clean
+    5、将XML格式的内容转为HTML格式的内容 allure generate allure-results -o allure_report/html --clean
         参数说明:
         -o                  指定目录位置
         --clean-alluredir   清空目录文件
  
-    6.若需要指定某些级别、某些模块单独执行用例则如下：
+    6、若需要指定某些级别、某些模块单独执行用例则如下：
  
     --allure-serverities blocker 指定[标记级别为“阻塞”]用例执行
  

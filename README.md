@@ -1,21 +1,26 @@
 # autoTest
-自动化框架Demo 慢慢优化还不是特别成熟
-- 安装环境依赖 pip install -r requirements.txt
+自动化框架Demo [pytest + selenium + allure]
+框架结构 - 待说明
 
-### pytest 插件安装
-    pip install pytest-xdist 多线程
+安装环境依赖 pip install -r requirements.txt
+
+#### pytest 插件安装
+    多线程:
+    pip install pytest-xdist
     
-    pip install pytest-rerunfailures 失败用例重跑
+    失败用例重跑:
+    pip install pytest-rerunfailures 
     
-    pip install pytest-html 报告
+    报告生成:
+    pip install pytest-html 
+    pip install allure-pytest allure
     
-    pip install allure-pytest allure报告
-    
-    pip install pytest-ordering 用例执行顺序
-    @pytest.mark.run(order=Num)
+    用例执行顺序:
+    pip install pytest-ordering 
+    用法：@pytest.mark.run(order=Num)
 
 ---
-### pytest 参数说明
+#### pytest 参数说明
 
  - 打印出用例中print内容 -s
  - 出现n次失败用例中止 --maxfail = Num
@@ -25,7 +30,7 @@
  - 运行所有用例，但优先运行上次失败的用例 --ff
  - 多线程运行 -n Num
 
-### pytest.ini 配置
+#### pytest.ini 配置
 
     [pytest]
     addopts = -s -q --html= report.html  (命令行快捷）
@@ -33,7 +38,7 @@
     @pytest.mark.bvt
     pytest -m bvt 运行标记bvt
 ---
-### allure 生成报告用法
+#### allure 生成报告
 
  - pycharm安装插件 pip install allure-pytest
  - allure插件安装包需配置环境变量 allure-2.13.8/bin

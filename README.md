@@ -1,6 +1,6 @@
 
 ## 框架 Pytest + Selenium + allure
->   安装环境依赖 pip install -r requirements.txt
+安装环境依赖 pip install -r requirements.txt
 
 
 

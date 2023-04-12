@@ -22,7 +22,7 @@
 
 ---
 
-### pytest 参数说明
+### pytest 可用参数（部分参数需安装插件）
 
     多线程运行 -n Num  
     
@@ -30,7 +30,7 @@
     
     运行时出现失败用例中止 -x
     
-    控制N次失败用例中止 --maxfail = Num
+    达到失败次数用例中止 --maxfail = Num
     
     失败用例重跑 --reruns Num 
     
@@ -42,10 +42,13 @@
 ### pytest.ini 配置
 
     [pytest]
-    addopts = -s -q --html= report.html  命令行执行默认带参
-    markers = bvt: bvt测试用例 
-    @pytest.mark.bvt
-    pytest -m bvt 运行标记bvt
+    addopts = -s -q --html= report.html     # 命令行执行 默认带参
+    markers = bvt: bvt测试用例              # 冒号写入标记说明
+    
+    # markes用法
+    @pytest.mark.bvt    # 标记用例
+    
+    pytest -m bvt       # 运行标记bvt
     
 ---
 

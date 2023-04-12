@@ -1,6 +1,7 @@
 # autoTest
-自动化框架Demo 
+自动化框架Demo 慢慢优化还不是特别成熟
 安装环境依赖 pip install -r requirements.txt
+
 ### pytest 插件安装
     pip install pytest-xdist 多线程
     

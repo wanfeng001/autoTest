@@ -1,5 +1,6 @@
 # autoTest
 自动化框架Demo [pytest + selenium + allure]
+
 框架结构 - 待说明
 
 安装环境依赖 pip install -r requirements.txt
@@ -20,20 +21,21 @@
     用法：@pytest.mark.run(order=Num)
 
 ---
-#### pytest 参数说明
+#### pytest 部分参数说明（部分命令需安装插件）
+    多线程运行 -n Num    
+    打印print内容 -s
+    运行时出现失败用例中止 -x
+    控制N次失败用例中止 --maxfail = Num
+    失败用例重跑 --reruns Num 
+    运行上次失败的用例 --lf
+    运行所有用例，但优先运行上次失败的用例 --ff
+    
 
- - 打印出用例中print内容 -s
- - 出现n次失败用例中止 --maxfail = Num
- - 出现失败用例后中止 -x
- - 失败用例重跑 --reruns Num
- - 运行上次失败的用例 --lf
- - 运行所有用例，但优先运行上次失败的用例 --ff
- - 多线程运行 -n Num
 
 #### pytest.ini 配置
 
     [pytest]
-    addopts = -s -q --html= report.html  (命令行快捷）
+    addopts = -s -q --html= report.html  命令行执行默认带参
     markers = bvt: bvt测试用例 
     @pytest.mark.bvt
     pytest -m bvt 运行标记bvt

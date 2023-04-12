@@ -32,33 +32,19 @@
 
 ## pytest 参数
 
-多线程运行 
+-n ：使用该命令后，将多个线程执行用例 pytest -n 3
 
-    pytest test.py -n Num 
+--reruns ：使用该命令后，将失败的用例重新执行 pytest --reruns 3
+    
+-q ：使用该命令后，将显示简单的结果（pytest -q）
 
-打印print的内容
+-s ：使用该命令后，将用例的信息打印出来 （pytest -s）
 
-    pytest test.py -s
+-x ： 遇到错误时停止测试 （pytest -x）
 
-出现失败用例中止
+-maxfail ： 当用例错误个数达到指定数量时，停止测试 pytest --maxfail 2
 
-    pytest test.py -x
 
-达到失败次数用例中止 
-
-    pytest test.py --maxfail = Num
-
-失败用例重跑n次
-
-    pytest test.py --reruns Num
-
-运行上次失败的用例 
-
-    pytest test.py --lf
-
-运行所有用例，但优先运行上次失败的用例
-
-    pytest test.py --ff
    
 
 ## pytest.ini 配置

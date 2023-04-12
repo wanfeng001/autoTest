@@ -8,7 +8,7 @@
 
 
 ## pytest 插件安装
-多线程
+多线程运行
 
     pip install pytest-xdist
 
